@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Sora';
+}
+
+/*===================== SEÇÃO MENU======================== */
+.header-container {
+  max-width: 1920px;
+  height: 100px;
+  background-color: #002a3a;
+}
+
+.container-menu {
+  max-width: 1100px;
+  margin: 0 auto;
+  height: 100px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  list-style: none;
+}
+
+.menu-logo img {
+  margin-top: 10px;
+}
+
+.menu li a {
+  display: inline-block;
+  font-family: 'Sora';
+  color: #fff;
+  text-decoration: none;
+  /* text-transform: uppercase; */
+  padding: 10px 20px;
+  position: relative;
+}
+
+.menu li a:hover:not(.link-ofertas) {
+  color: #ffa400;
+}
+
+.link-ofertas {
+  background: linear-gradient(120deg, rgb(238, 39, 55), rgb(255, 164, 0));
+  border-radius: 5px;
+}
+
+.galery {
+  margin: 20px auto;
+  max-width: 1100px;
+  height: calc(90vh - 80px);
+  overflow: hidden;
+}
+
+.galery .fotos {
+  width: 500%;
+  animation-name: animacao;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+
+.galery .fotos img {
+  width: 20%;
+  height: calc(90vh - 80px);
+}
+
+@keyframes animacao {
+  0% {
+    margin-left: 0;
+  }
+
+  20% {
+    margin-left: 0;
+  }
+
+  25% {
+    margin-left: -100%;
+  }
+
+  45% {
+    margin-left: -100%;
+  }
+
+  50% {
+    margin-left: -201%;
+  }
+
+  70% {
+    margin-left: -201%;
+  }
+
+  90% {
+    margin-left: -300%;
+  }
+
+  100% {
+    margin-left: -300%;
+  }
+}
+
+/*====================== SECTION VIDEO======================= */
+.video {
+  padding: 65px;
+}
+
+.video-container,
+.app-container,
+.agenda-container {
+  width: 1100px;
+  flex-wrap: wrap;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.horario,
+.app-informacoes {
+  display: flex;
+  flex-direction: column;
+  place-items: start;
+  justify-self: center;
+  justify-content: space-between;
+  width: 360px;
+  padding: 0px 20px 0 10px;
+}
+
+.horario h2 {
+  font-family: "Sora";
+  font-size: 30px;
+  font-weight: 700;
+  background-image: linear-gradient(to right, rgb(38, 208, 124), rgb(0, 119, 200));
+  background-clip: text;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.horario div {
+  font-family: "Roboto";
+  color: #002a3a;
+}
+
+.btn-youtube {
+  display: flex;
+  gap: 15px;
+  justify-self: flex-start;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: "Roboto";
+  font-weight: 500;
+  color: #fff;
+  background: linear-gradient(to right, rgb(0, 119, 200), rgb(38, 208, 124));
+}
+
+.btn-youtube img {
+  width: 25px;
+  color: #fff;
+}
+
+.video-celebracao{
+  box-shadow:0px 0px 0px 10px #fff;
+  border-radius: 15px;
+}
+
+/*======================= SECTION APP=========================== */
+.app {
+  background-color: #dcdcdc;
+  padding: 65px;
+}
+
+.app-informacoes {
+  width: 450px;
+  justify-self: end;
+  gap: 15px;
+}
+
+.app-informacoes h2 {
+  font-family: "Sora";
+  font-size: 30px;
+  font-weight: 700;
+  background-image: linear-gradient(to right, rgb(135, 24, 157), rgb(23, 28, 143));
+  background-clip: text;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.app-informacoes p {
+  font-family: "Roboto";
+  color: #666;
+  font-size: 15px;
+}
+
+.btn-app {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.btn-app a {
+  text-decoration: none;
+  color: #000;
+  font-family: "Roboto";
+  font-weight: 500;
+}
+
+.logo-apple {
+  font-size: 35px;
+  color: #000;
+}
+
+.btn-app-store,
+.btn-google-store {
+  background: linear-gradient(#dcdcdc, #dcdcdc) padding-box, linear-gradient(45deg, rgb(135, 24, 157), rgb(23, 28, 143)) border-box;
+  border: 3.5px solid transparent;
+  border-radius: 10px;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.video-app{
+  box-shadow:0px 0px 0px 10px #dcdcdc;
+  border-radius: 15px;
+}
+
+
+/*===================== SEÇÃO AGENDA ========================*/
+
+.agenda{
+  padding: 65px;
+}
+.agenda-container{
+  width: 880px;
+  grid-template-columns: 300px 1fr;
+  gap: 60px;
+}
+
+.agenda-container h2 {
+  font-family: "Sora";
+  font-size: 30px;
+  font-weight: 700;
+  background-image: linear-gradient(to right, rgb(0,119, 200), rgb(38, 208, 124));
+  background-clip: text;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.agenda-container p{
+  font-family: "Roboto";
+  color: #666;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.agenda-bloco{
+  font-family: "Roboto";
+  color: #666;
+  padding: 15px 0;
+  margin-bottom: 28px;
+
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(45deg, rgb(0, 119, 200), rgb(38, 208, 124)) border-box;
+  border-bottom: 3.5px solid transparent;
+}
+.agenda-flex{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 15px;
+  align-items: center;
+}
+
+.agenda-bloco img{
+  width: 100px;
+}
+.agenda-bloco .submarca-celebrando{
+  width: 150px;
+}
+.agenda-bloco .submarca-idv,
+.agenda-bloco .submarca-vertical,
+.agenda-bloco .submarca-kids{
+  width: 90px;
+}
+.agenda-bloco a .icone-instagram{
+  width: 10px;
+}
