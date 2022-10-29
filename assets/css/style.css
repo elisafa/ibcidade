@@ -238,12 +238,13 @@ body {
 
 .agenda{
   padding: 4.0625em 4.0625em 0 4.0625em;
-  background-image: url("../images/marcas/fundo-marca2-esquerda.svg");
+  /* background-image: url("../images/marcas/fundo-marca2-esquerda.svg");
   background-repeat: no-repeat;
   background-position: bottom 0 left 0;
   background-size: 500px;
-  border-bottom:1px solid var(--cor10);
+  border-bottom:1px solid var(--cor10); */
 }
+
 
 .agenda-container{
   width: 55em;
@@ -304,22 +305,32 @@ body {
 
 .areas{
   padding: 60px;
-  /* background-color: red; */
+  background-color: var(--cor10);
 }
 .areas-container{
-  width: 68.75em;
   flex-wrap: wrap;
   margin: auto;
-  /* background-color: blue; */
   display: grid;
-  grid-template-columns: 15em 15em 15em 15em ;
+  grid-template-columns: 10em 10em 10em 10em 10em 10em 10em;
   justify-items: center;
   align-items: center;
   gap: 20px;
 }
 .area-titulo-posicao{
-  margin-bottom: 60px;
+  margin-bottom: 30px;
+  margin-left: 200px;
 }
 .areas-container a img {
-  width: 9.375em;
+  width: 130px;
+  padding: 10px;
+  filter: brightness(0);
+  opacity: 50%;
+}
+
+.areas-container a img:hover{
+  transition: all .5s;
+  transform: scale(1.5);
+  filter: brightness(1);
+  opacity: 100%;
+
 }

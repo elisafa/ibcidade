@@ -36,3 +36,16 @@
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
+
+.titulo-rosa-laranja {
+  font-family: "Sora";
+  font-size: 1.875em;
+  font-weight: 700;
+  background-image: linear-gradient(to right, var(--cor6), var(--cor2));
+  background-clip: text;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
