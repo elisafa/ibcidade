@@ -1,0 +1,38 @@
+.titulo-verde-azul{
+  font-family: "Sora";
+  font-size: 1.875em;
+  font-weight: 700;
+  background-image: linear-gradient(to right, var(--cor9), var(--cor8));
+  background-clip: text;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.titulo-lilas-azul {
+  font-family: "Sora";
+  font-size: 1.875em;
+  font-weight: 700;
+  background-image: linear-gradient(to right, var(--cor4), var(--cor5));
+  background-clip: text;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.titulo-azul-verde {
+  font-family: "Sora";
+  font-size: 1.875em;
+  font-weight: 700;
+  background-image: linear-gradient(to right, var(--cor8), var(--cor9));
+  background-clip: text;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}

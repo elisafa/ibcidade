@@ -14,6 +14,7 @@
   --cor9: #26D07C;
 
   --cor10: #dcdcdc;
+
 }
 
 * {
@@ -132,7 +133,7 @@ body {
 
 .video-container,
 .app-container,
-.agenda-container {
+.agenda-container{
   width: 68.75em;
   flex-wrap: wrap;
   margin: auto;
@@ -151,18 +152,6 @@ body {
   padding: 0px 1.25em 0 .625em;
 }
 
-.horario h2 {
-  font-family: "Sora";
-  font-size: 1.875em;
-  font-weight: 700;
-  background-image: linear-gradient(to right, var(--cor9), var(--cor8));
-  background-clip: text;
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
 
 .horario div {
   font-family: "Roboto";
@@ -202,19 +191,6 @@ body {
   width: 28.125em;
   justify-self: end;
   gap: 0.9375em;
-}
-
-.app-informacoes h2 {
-  font-family: "Sora";
-  font-size: 1.875em;
-  font-weight: 700;
-  background-image: linear-gradient(to right, var(--cor4), var(--cor5));
-  background-clip: text;
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
 }
 
 .app-informacoes p {
@@ -261,25 +237,18 @@ body {
 /*===================== SEÇÃO AGENDA ========================*/
 
 .agenda{
-  padding: 4.0625em;
+  padding: 4.0625em 4.0625em 0 4.0625em;
+  background-image: url("../images/marcas/fundo-marca2-esquerda.svg");
+  background-repeat: no-repeat;
+  background-position: bottom 0 left 0;
+  background-size: 500px;
+  border-bottom:1px solid var(--cor10);
 }
+
 .agenda-container{
   width: 55em;
   grid-template-columns: 18.75em 1fr;
   gap: 3.75em;
-}
-
-.agenda-container h2 {
-  font-family: "Sora";
-  font-size: 1.875em;
-  font-weight: 700;
-  background-image: linear-gradient(to right, var(--cor8), var(--cor9));
-  background-clip: text;
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
 }
 
 .agenda-container p{
@@ -329,4 +298,28 @@ body {
 .agenda-flex a{
   text-decoration: none;
   color: var(--cor1);
+}
+
+/* ==================AREAS============================= */
+
+.areas{
+  padding: 60px;
+  /* background-color: red; */
+}
+.areas-container{
+  width: 68.75em;
+  flex-wrap: wrap;
+  margin: auto;
+  /* background-color: blue; */
+  display: grid;
+  grid-template-columns: 15em 15em 15em 15em ;
+  justify-items: center;
+  align-items: center;
+  gap: 20px;
+}
+.area-titulo-posicao{
+  margin-bottom: 60px;
+}
+.areas-container a img {
+  width: 9.375em;
 }
