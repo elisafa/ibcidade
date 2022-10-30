@@ -139,6 +139,7 @@ body {
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
+ 
 }
 
 .horario,
@@ -185,6 +186,7 @@ body {
 .app {
   background-color: #dcdcdc;
   padding: 4.0625em;
+ 
 }
 
 .app-informacoes {
@@ -238,13 +240,14 @@ body {
 
 .agenda{
   padding: 4.0625em 4.0625em 0 4.0625em;
-  /* background-image: url("../images/marcas/fundo-marca2-esquerda.svg");
-  background-repeat: no-repeat;
-  background-position: bottom 0 left 0;
-  background-size: 500px;
-  border-bottom:1px solid var(--cor10); */
 }
-
+.agenda-imagens{
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: flex-start;
+  margin-bottom: 60px;
+}
 
 .agenda-container{
   width: 55em;
@@ -275,6 +278,9 @@ body {
   row-gap: 0.9375em;
   align-items: center;
 }
+.agenda-container p{
+  margin-bottom: 3.75em;
+}
 .domingo{
   padding-bottom: 0.625em;
   border-bottom: 2px solid var(--cor10);
@@ -284,13 +290,15 @@ body {
 .agenda-bloco img{
   width: 6.25em;
 }
-.agenda-bloco .submarca-celebrando{
-  width: 9.375em;
-}
-.agenda-bloco .submarca-idv,
-.agenda-bloco .submarca-vertical,
-.agenda-bloco .submarca-kids{
-  width: 5.625em;
+
+.agenda-imagens .submarca-idv,
+.agenda-imagens .submarca-kids,
+.agenda-imagens .submarca-celebrando,
+.agenda-imagens .submarca-cafe{
+  width: 200px;
+  filter: brightness(0);
+  opacity: 5%;
+
 }
 .agenda-bloco a .icone-instagram{
   width: .9375em;
@@ -323,14 +331,9 @@ body {
 .areas-container a img {
   width: 130px;
   padding: 10px;
-  filter: brightness(0);
-  opacity: 50%;
 }
 
 .areas-container a img:hover{
-  transition: all .5s;
+  transition: all .6s;
   transform: scale(1.5);
-  filter: brightness(1);
-  opacity: 100%;
-
 }
