@@ -1,4 +1,4 @@
-:root{
+:root {
   --cor1: #002a3a;
 
   --cor2: #ffa400;
@@ -29,8 +29,10 @@ body {
 
 /*===================== SEÇÃO MENU======================== */
 .header-container {
-  max-width: 120em; /* 1920px/16px = 120em  */
-  height: 6.25em; /* 100px/16px = 120em  */
+  max-width: 120em;
+  /* 1920px/16px = 120em  */
+  height: 6.25em;
+  /* 100px/16px = 120em  */
   background-color: var(--cor1);
 }
 
@@ -133,13 +135,14 @@ body {
 
 .video-container,
 .app-container,
-.agenda-container{
+.agenda-container,
+.dizimos-container {
   width: 68.75em;
   flex-wrap: wrap;
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
- 
+
 }
 
 .horario,
@@ -177,8 +180,8 @@ body {
   color: #fff;
 }
 
-.video-celebracao{
-  box-shadow:0px 0px 0px 10px #fff;
+.video-celebracao {
+  box-shadow: 0px 0px 0px 10px #fff;
   border-radius: 0.9375em;
 }
 
@@ -186,7 +189,7 @@ body {
 .app {
   background-color: #dcdcdc;
   padding: 4.0625em;
- 
+
 }
 
 .app-informacoes {
@@ -230,18 +233,19 @@ body {
   gap: 5px;
 }
 
-.video-app{
-  box-shadow:0px 0px 0px 10px #dcdcdc;
+.video-app {
+  box-shadow: 0px 0px 0px 10px #dcdcdc;
   border-radius: 15px;
 }
 
 
 /*===================== SEÇÃO AGENDA ========================*/
 
-.agenda{
+.agenda {
   padding: 4.0625em 4.0625em 0 4.0625em;
 }
-.agenda-imagens{
+
+.agenda-imagens {
   display: flex;
   flex-direction: column;
   gap: 60px;
@@ -249,20 +253,20 @@ body {
   margin-bottom: 60px;
 }
 
-.agenda-container{
+.agenda-container {
   width: 55em;
   grid-template-columns: 18.75em 1fr;
   gap: 3.75em;
 }
 
-.agenda-container p{
+.agenda-container p {
   font-family: "Roboto";
   color: #666;
   font-size: 0.9375em;
   margin-top: 1.25em;
 }
 
-.agenda-bloco{
+.agenda-bloco {
   font-family: "Roboto";
   color: #666;
   padding: 0.93754em 0;
@@ -271,51 +275,56 @@ body {
   background: linear-gradient(#fff, #fff) padding-box, linear-gradient(45deg, var(--cor8), var(--cor9)) border-box;
   border-bottom: 3.5px solid transparent;
 }
-.agenda-flex{
+
+.agenda-flex {
   margin-top: 1.25em;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   row-gap: 0.9375em;
   align-items: center;
 }
-.agenda-container p{
+
+.agenda-container p {
   margin-bottom: 3.75em;
 }
-.domingo{
+
+.domingo {
   padding-bottom: 0.625em;
   border-bottom: 2px solid var(--cor10);
 }
 
 /* TAMANHOS VARIADOS DAS SUBMARCAS */
-.agenda-bloco img{
+.agenda-bloco img {
   width: 6.25em;
 }
 
 .agenda-imagens .submarca-idv,
 .agenda-imagens .submarca-kids,
 .agenda-imagens .submarca-celebrando,
-.agenda-imagens .submarca-cafe{
+.agenda-imagens .submarca-cafe {
   width: 200px;
   filter: brightness(0);
   opacity: 5%;
 
 }
-.agenda-bloco a .icone-instagram{
+
+.agenda-bloco a .icone-instagram {
   width: .9375em;
 }
 
-.agenda-flex a{
+.agenda-flex a {
   text-decoration: none;
   color: var(--cor1);
 }
 
 /* ==================AREAS============================= */
 
-.areas{
+.areas {
   padding: 60px;
-  background-color: var(--cor10);
+  /* background-color: var(--cor10); */
 }
-.areas-container{
+
+.areas-container {
   flex-wrap: wrap;
   margin: auto;
   display: grid;
@@ -324,16 +333,47 @@ body {
   align-items: center;
   gap: 20px;
 }
-.area-titulo-posicao{
+
+.area-titulo-posicao {
   margin-bottom: 30px;
   margin-left: 200px;
 }
+
 .areas-container a img {
   width: 130px;
   padding: 10px;
 }
 
-.areas-container a img:hover{
+.areas-container a img:hover {
   transition: all .6s;
   transform: scale(1.5);
+}
+
+/* ===================DÍZIMOS E OFERTAS================== */
+.dizimos {
+  padding: 60px;
+  background-color: var(--cor10);
+}
+
+.dizimos-container {
+  width: 55em;
+  font-family: "Roboto";
+  color: var(--cor1);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 80px;
+}
+.dizimos-container div{
+  border-right: 1px solid red;
+}
+
+.dizimos-container h2 {
+  grid-column: 1/4;
+}
+
+.dizimos-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
 }
