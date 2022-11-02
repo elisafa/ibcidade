@@ -1,3 +1,5 @@
+@import "titulos.css";
+
 :root {
   --cor1: #002a3a;
 
@@ -63,7 +65,7 @@ body {
   color: #fff;
   text-decoration: none;
   padding: 0.625em 1.25em;
-  position: relative;
+  /* position: relative; */
 }
 
 .menu li a:hover:not(.link-ofertas) {
@@ -73,6 +75,7 @@ body {
 .link-ofertas {
   background: linear-gradient(120deg, var(--cor3), var(--cor2));
   border-radius: 5px;
+  /* flex-grow: 2; */
 }
 
 .galery {
@@ -304,7 +307,7 @@ body {
 .agenda-imagens .submarca-cafe {
   width: 200px;
   filter: brightness(0);
-  opacity: 5%;
+  opacity: 15%;
 
 }
 
