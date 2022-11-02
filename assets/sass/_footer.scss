@@ -1,0 +1,36 @@
+.footer {
+  padding: 80px;
+  background-image: linear-gradient(to right, $cor3, $cor2);
+}
+
+.footer-container {
+  font-size: 20px;
+  font-family: "Roboto";
+  color: #fff;
+  width: 55em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: auto;
+  align-items: center;
+}
+
+.footer-container img {
+  width: 200px;
+}
+
+.footer-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+
+.footer-flex img {
+  width: 15px;
+  stroke: #fff;
+}
+
+.footer-icones {
+  justify-self: end;
+  font-size: 50px;
+}

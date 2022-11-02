@@ -1,0 +1,75 @@
+.agenda {
+  padding: 4.0625em 4.0625em 0 4.0625em;
+}
+
+.agenda-imagens {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: flex-start;
+  margin-bottom: 60px;
+}
+
+.agenda-container {
+  width: 55em;
+  grid-template-columns: 18.75em 1fr;
+  gap: 3.75em;
+}
+
+.agenda-container p {
+  font-family: "Roboto";
+  color: #666;
+  font-size: 0.9375em;
+  margin-top: 1.25em;
+}
+
+.agenda-bloco {
+  font-family: "Roboto";
+  color: #666;
+  padding: 0.93754em 0;
+  margin-bottom: 1.875em;
+
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(45deg, $cor8, $cor9) border-box;
+  border-bottom: 3.5px solid transparent;
+}
+
+.agenda-flex {
+  margin-top: 1.25em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 0.9375em;
+  align-items: center;
+}
+
+.agenda-container p {
+  margin-bottom: 3.75em;
+}
+
+.domingo {
+  padding-bottom: 0.625em;
+  border-bottom: 2px solid $cor10;
+}
+
+/* TAMANHOS VARIADOS DAS SUBMARCAS */
+.agenda-bloco img {
+  width: 6.25em;
+}
+
+.agenda-imagens .submarca-idv,
+.agenda-imagens .submarca-kids,
+.agenda-imagens .submarca-celebrando,
+.agenda-imagens .submarca-cafe {
+  width: 200px;
+  filter: brightness(0);
+  opacity: 15%;
+
+}
+
+.agenda-bloco a .icone-instagram {
+  width: .9375em;
+}
+
+.agenda-flex a {
+  text-decoration: none;
+  color: $cor1;
+}

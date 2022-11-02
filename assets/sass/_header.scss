@@ -1,0 +1,41 @@
+.header{
+  max-width: 120em;
+  height: 6.25em;
+  background-color: $cor1;
+
+    &_menu{
+      max-width: 68.75em;
+      margin: 0 auto;
+      height: 6.25em;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      align-items: center;
+
+      &_logo{
+        margin-top: 0.625em;
+      }
+    }
+  }
+
+.header_menu_link {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.9375em;
+    list-style: none;
+
+      a{
+        display: inline-block;
+        font-family: 'Sora';
+        color: #fff;
+        text-decoration: none;
+        padding: 0.625em 1.25em;
+
+        &:hover:not(.link-ofertas){
+          color: $cor2;
+        }
+    }
+    .link-ofertas {
+      background: linear-gradient(120deg, $cor3, $cor2);
+      border-radius: 5px;
+    }
+}
