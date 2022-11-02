@@ -1,0 +1,22 @@
+{
+  "name": "ibcidade",
+  "version": "1.0.0",
+  "description": "pagina oficial da ibcidade",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elisafa/ibcidade.git"
+  },
+  "author": "Elisafa Junior",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elisafa/ibcidade/issues"
+  },
+  "homepage": "https://github.com/elisafa/ibcidade#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  }
+}
