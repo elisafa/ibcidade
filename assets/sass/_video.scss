@@ -1,20 +1,47 @@
 .video {
   padding: 4.0625em;
+
+  &_container{
+    @include container;
+  }
+
+  &_horario{
+    display: flex;
+    flex-direction: column;
+    place-items: start;
+    justify-self: center;
+    justify-content: space-between;
+    width: 22.5em;
+    padding: 0px 1.25em 0 .625em;
+
+      h2{
+        @include titulo($cor9, $cor8)
+      }
+      div{
+        font-family: "Roboto";
+        color: #002a3a;
+      }
+      .btn-youtube {
+        display: flex;
+        gap: 0.9375em;
+        justify-self: flex-start;
+        padding: 0.625em 1.25em;
+        border-radius: 0.3125em;
+        text-decoration: none;
+        font-family: "Roboto";
+        font-weight: 500;
+        color: #fff;
+        background: linear-gradient(to right, $cor8, $cor9);
+      }
+  }
 }
 
-.video-container,
 .app-container,
 .agenda-container,
 .dizimos-container {
-  width: 68.75em;
-  flex-wrap: wrap;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
+  @include container;
 }
 
-.horario,
 .app-informacoes {
   display: flex;
   flex-direction: column;
@@ -26,23 +53,7 @@
 }
 
 
-.horario div {
-  font-family: "Roboto";
-  color: #002a3a;
-}
 
-.btn-youtube {
-  display: flex;
-  gap: 0.9375em;
-  justify-self: flex-start;
-  padding: 0.625em 1.25em;
-  border-radius: 0.3125em;
-  text-decoration: none;
-  font-family: "Roboto";
-  font-weight: 500;
-  color: #fff;
-  background: linear-gradient(to right, $cor8, $cor9);
-}
 
 .btn-youtube img {
   width: 1.5625em;

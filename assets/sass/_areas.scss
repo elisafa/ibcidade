@@ -1,29 +1,32 @@
 .areas {
   padding: 60px;
-  /* background-color: var(--cor10); */
+
+    .areas_container {
+        flex-wrap: wrap;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 10em 10em 10em 10em 10em 10em 10em;
+        justify-items: center;
+        align-items: center;
+        gap: 20px;
+
+          img {
+            width: 130px;
+            padding: 10px;
+
+            &:hover{
+              transition: all .6s;
+              transform: scale(1.5);
+            }
+          }
+      }
+    
+    h2{
+      margin-bottom: 30px;
+      margin-left: 200px;
+      @include titulo($cor4, $cor5)
+    }
 }
 
-.areas-container {
-  flex-wrap: wrap;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 10em 10em 10em 10em 10em 10em 10em;
-  justify-items: center;
-  align-items: center;
-  gap: 20px;
-}
 
-.area-titulo-posicao {
-  margin-bottom: 30px;
-  margin-left: 200px;
-}
 
-.areas-container a img {
-  width: 130px;
-  padding: 10px;
-}
-
-.areas-container a img:hover {
-  transition: all .6s;
-  transform: scale(1.5);
-}

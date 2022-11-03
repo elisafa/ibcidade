@@ -71,8 +71,46 @@ body {
 
 .video {
   padding: 4.0625em; }
+  .video_container {
+    width: 68.75em;
+    flex-wrap: wrap;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+  .video_horario {
+    display: flex;
+    flex-direction: column;
+    place-items: start;
+    justify-self: center;
+    justify-content: space-between;
+    width: 22.5em;
+    padding: 0px 1.25em 0 .625em; }
+    .video_horario h2 {
+      font-family: "Sora";
+      font-size: 1.875em;
+      font-weight: 700;
+      background-image: linear-gradient(to right, #26D07C, #0077C8);
+      background-clip: text;
+      background-size: 100%;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-text-fill-color: transparent; }
+    .video_horario div {
+      font-family: "Roboto";
+      color: #002a3a; }
+    .video_horario .btn-youtube {
+      display: flex;
+      gap: 0.9375em;
+      justify-self: flex-start;
+      padding: 0.625em 1.25em;
+      border-radius: 0.3125em;
+      text-decoration: none;
+      font-family: "Roboto";
+      font-weight: 500;
+      color: #fff;
+      background: linear-gradient(to right, #0077C8, #26D07C); }
 
-.video-container,
 .app-container,
 .agenda-container,
 .dizimos-container {
@@ -82,7 +120,6 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr; }
 
-.horario,
 .app-informacoes {
   display: flex;
   flex-direction: column;
@@ -91,22 +128,6 @@ body {
   justify-content: space-between;
   width: 22.5em;
   padding: 0px 1.25em 0 .625em; }
-
-.horario div {
-  font-family: "Roboto";
-  color: #002a3a; }
-
-.btn-youtube {
-  display: flex;
-  gap: 0.9375em;
-  justify-self: flex-start;
-  padding: 0.625em 1.25em;
-  border-radius: 0.3125em;
-  text-decoration: none;
-  font-family: "Roboto";
-  font-weight: 500;
-  color: #fff;
-  background: linear-gradient(to right, #0077C8, #26D07C); }
 
 .btn-youtube img {
   width: 1.5625em;
@@ -119,101 +140,113 @@ body {
 .app {
   background-color: #dcdcdc;
   padding: 4.0625em; }
-
-.app-informacoes {
-  width: 28.125em;
-  justify-self: end;
-  gap: 0.9375em; }
-
-.app-informacoes p {
-  font-family: "Roboto";
-  color: #666;
-  font-size: 0.9375em; }
-
-.btn-app {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.625em; }
-
-.btn-app a {
-  text-decoration: none;
-  color: #000;
-  font-family: "Roboto";
-  font-weight: 500; }
-
-.logo-apple {
-  font-size: 2.1875em;
-  color: #000; }
-
-.btn-app-store,
-.btn-google-store {
-  background: linear-gradient(#dcdcdc, #dcdcdc) padding-box, linear-gradient(45deg, #87189D, #171C8F) border-box;
-  border: 3.5px solid transparent;
-  border-radius: 10px;
-  padding: 5px 10px;
-  display: flex;
-  align-items: center;
-  gap: 5px; }
-
-.video-app {
-  box-shadow: 0px 0px 0px 10px #dcdcdc;
-  border-radius: 15px; }
+  .app_container {
+    width: 68.75em;
+    flex-wrap: wrap;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    .app_container .video-app {
+      box-shadow: 0px 0px 0px 10px #dcdcdc;
+      border-radius: 15px; }
+    .app_container_info {
+      display: flex;
+      flex-direction: column;
+      place-items: start;
+      justify-self: center;
+      justify-content: space-between;
+      width: 22.5em;
+      padding: 0px 1.25em 0 .625em; }
+      .app_container_info h2 {
+        font-family: "Sora";
+        font-size: 1.875em;
+        font-weight: 700;
+        background-image: linear-gradient(to right, #87189D, #171C8F);
+        background-clip: text;
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent; }
+      .app_container_info p {
+        font-family: "Roboto";
+        color: #666;
+        font-size: 0.9375em; }
+      .app_container_info .btn-app {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.625em; }
+        .app_container_info .btn-app .btn-app-store,
+        .app_container_info .btn-app .btn-google-store {
+          text-decoration: none;
+          color: #000;
+          font-family: "Roboto";
+          font-weight: 500;
+          background: linear-gradient(#dcdcdc, #dcdcdc) padding-box, linear-gradient(45deg, #87189D, #171C8F) border-box;
+          border: 2.5px solid transparent;
+          border-radius: 10px;
+          padding: 3px 8px;
+          display: flex;
+          align-items: center;
+          gap: 5px; }
+          .app_container_info .btn-app .btn-app-store .logo-apple,
+          .app_container_info .btn-app .btn-google-store .logo-apple {
+            font-size: 2.1875em;
+            color: #000; }
 
 .agenda {
   padding: 4.0625em 4.0625em 0 4.0625em; }
-
-.agenda-imagens {
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
-  align-items: flex-start;
-  margin-bottom: 60px; }
-
-.agenda-container {
-  width: 55em;
-  grid-template-columns: 18.75em 1fr;
-  gap: 3.75em; }
-
-.agenda-container p {
-  font-family: "Roboto";
-  color: #666;
-  font-size: 0.9375em;
-  margin-top: 1.25em; }
-
-.agenda-bloco {
-  font-family: "Roboto";
-  color: #666;
-  padding: 0.93754em 0;
-  margin-bottom: 1.875em;
-  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(45deg, #0077C8, #26D07C) border-box;
-  border-bottom: 3.5px solid transparent; }
-
-.agenda-flex {
-  margin-top: 1.25em;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 0.9375em;
-  align-items: center; }
-
-.agenda-container p {
-  margin-bottom: 3.75em; }
-
-.domingo {
-  padding-bottom: 0.625em;
-  border-bottom: 2px solid #dcdcdc; }
+  .agenda_container {
+    width: 55em;
+    display: grid;
+    grid-template-columns: 18.75em 1fr;
+    margin: auto;
+    gap: 3.75em; }
+    .agenda_container_imagens {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+      align-items: flex-start;
+      margin-bottom: 60px; }
+      .agenda_container_imagens img {
+        width: 180px;
+        filter: brightness(0);
+        opacity: 15%; }
+    .agenda_container h2 {
+      font-family: "Sora";
+      font-size: 1.875em;
+      font-weight: 700;
+      background-image: linear-gradient(to right, #0077C8, #26D07C);
+      background-clip: text;
+      background-size: 100%;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-text-fill-color: transparent; }
+    .agenda_container p {
+      font-family: "Roboto";
+      color: #666;
+      font-size: 0.9375em;
+      margin-top: 1.25em;
+      margin-bottom: 3em; }
+  .agenda .agenda-bloco {
+    font-family: "Roboto";
+    color: #666;
+    padding: 0.93754em 0;
+    margin-bottom: 1.875em;
+    background: linear-gradient(#fff, #fff) padding-box, linear-gradient(45deg, #0077C8, #26D07C) border-box;
+    border-bottom: 3.5px solid transparent; }
+    .agenda .agenda-bloco .agenda-flex {
+      margin-top: 1.25em;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      row-gap: 0.9375em;
+      align-items: center; }
+    .agenda .agenda-bloco .domingo {
+      padding-bottom: 0.625em;
+      border-bottom: 2px solid #dcdcdc; }
 
 /* TAMANHOS VARIADOS DAS SUBMARCAS */
-.agenda-bloco img {
-  width: 6.25em; }
-
-.agenda-imagens .submarca-idv,
-.agenda-imagens .submarca-kids,
-.agenda-imagens .submarca-celebrando,
-.agenda-imagens .submarca-cafe {
-  width: 200px;
-  filter: brightness(0);
-  opacity: 15%; }
-
 .agenda-bloco a .icone-instagram {
   width: .9375em; }
 
@@ -222,81 +255,96 @@ body {
   color: #002a3a; }
 
 .areas {
-  padding: 60px;
-  /* background-color: var(--cor10); */ }
-
-.areas-container {
-  flex-wrap: wrap;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 10em 10em 10em 10em 10em 10em 10em;
-  justify-items: center;
-  align-items: center;
-  gap: 20px; }
-
-.area-titulo-posicao {
-  margin-bottom: 30px;
-  margin-left: 200px; }
-
-.areas-container a img {
-  width: 130px;
-  padding: 10px; }
-
-.areas-container a img:hover {
-  transition: all .6s;
-  transform: scale(1.5); }
+  padding: 60px; }
+  .areas .areas_container {
+    flex-wrap: wrap;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 10em 10em 10em 10em 10em 10em 10em;
+    justify-items: center;
+    align-items: center;
+    gap: 20px; }
+    .areas .areas_container img {
+      width: 130px;
+      padding: 10px; }
+      .areas .areas_container img:hover {
+        transition: all .6s;
+        transform: scale(1.5); }
+  .areas h2 {
+    margin-bottom: 30px;
+    margin-left: 200px;
+    font-family: "Sora";
+    font-size: 1.875em;
+    font-weight: 700;
+    background-image: linear-gradient(to right, #87189D, #171C8F);
+    background-clip: text;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent; }
 
 .dizimos {
   padding: 60px;
-  background-color: #dcdcdc; }
-
-.dizimos-container {
-  width: 55em;
-  font-family: "Roboto";
-  color: var(--cor1);
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 80px; }
-
-.dizimos-container div {
-  border-right: 1px solid #ee2737; }
-
-.dizimos-container h2 {
-  grid-column: 1/4; }
-
-.dizimos-flex {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  justify-content: center; }
+  background-color: #dcdcdc;
+  padding-bottom: 100px; }
+  .dizimos h2 {
+    grid-column: 1/4;
+    margin-bottom: 30px;
+    margin-left: 200px;
+    font-family: "Sora";
+    font-size: 1.875em;
+    font-weight: 700;
+    background-image: linear-gradient(to right, #EF4B81, #ffa400);
+    background-clip: text;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent; }
+  .dizimos_container {
+    width: 55em;
+    font-family: "Roboto";
+    color: #002a3a;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 80px;
+    margin: auto; }
+    .dizimos_container div {
+      border-right: 1px solid #ee2737; }
+  .dizimos .dizimos_flex {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center; }
 
 .footer {
   padding: 80px;
   background-image: linear-gradient(to right, #ee2737, #ffa400); }
+  .footer_container {
+    font-size: 20px;
+    font-family: "Roboto";
+    color: #fff;
+    width: 55em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    align-items: center; }
+    .footer_container img {
+      width: 200px; }
+  .footer_flex {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center; }
+  .footer_icones {
+    justify-self: end;
+    font-size: 50px; }
 
-.footer-container {
-  font-size: 20px;
+.marca {
+  text-align: center;
   font-family: "Roboto";
-  color: #fff;
-  width: 55em;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: auto;
-  align-items: center; }
-
-.footer-container img {
-  width: 200px; }
-
-.footer-flex {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  justify-content: center; }
-
-.footer-flex img {
-  width: 15px;
-  stroke: #fff; }
-
-.footer-icones {
-  justify-self: end;
-  font-size: 50px; }
+  padding: 16px;
+  background-color: #002a3a;
+  color: #dcdcdc;
+  font-size: 10px; }
