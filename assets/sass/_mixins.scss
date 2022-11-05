@@ -18,3 +18,30 @@
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
+
+
+//MEDIA QUERY MANAGER
+/* 
+0 - 600px: phone
+600 - 900px: tablet portrait
+900 - 1200px: tablet landscape
+[1200 - 1800] normal styles
+1800px +: big desktop
+*/
+
+
+// @mixin respond($breackpoint) {
+//   @if $breackpoint == phone{
+//     @media(max-width: 600px){@content};
+//   }
+//   @if $berackpoint == tab-port{
+//     @media(max-width: 900px){@content};
+//   }
+//   @if $breackpoint == tab-land{
+//     @media(max-width: 1200px){@content};
+//   }
+//   @if $breackpoint == big-desktop{
+//     @media(min-width: 1800px){@content};
+//   }
+// }
+

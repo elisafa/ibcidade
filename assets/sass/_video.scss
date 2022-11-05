@@ -1,11 +1,11 @@
 .video {
   padding: 4.0625em;
 
-  &_container{
+  &_container {
     @include container;
   }
 
-  &_horario{
+  &_horario {
     display: flex;
     flex-direction: column;
     place-items: start;
@@ -14,25 +14,27 @@
     width: 22.5em;
     padding: 0px 1.25em 0 .625em;
 
-      h2{
-        @include titulo($cor9, $cor8)
-      }
-      div{
-        font-family: "Roboto";
-        color: #002a3a;
-      }
-      .btn-youtube {
-        display: flex;
-        gap: 0.9375em;
-        justify-self: flex-start;
-        padding: 0.625em 1.25em;
-        border-radius: 0.3125em;
-        text-decoration: none;
-        font-family: "Roboto";
-        font-weight: 500;
-        color: #fff;
-        background: linear-gradient(to right, $cor8, $cor9);
-      }
+    h2 {
+      @include titulo($cor9, $cor8)
+    }
+
+    div {
+      font-family: "Roboto";
+      color: #002a3a;
+    }
+
+    .btn-youtube {
+      display: flex;
+      gap: 0.9375em;
+      justify-self: flex-start;
+      padding: 0.625em 1.25em;
+      border-radius: 0.3125em;
+      text-decoration: none;
+      font-family: "Roboto";
+      font-weight: 500;
+      color: #fff;
+      background: linear-gradient(to right, $cor8, $cor9);
+    }
   }
 }
 

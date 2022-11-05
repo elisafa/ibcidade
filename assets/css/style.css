@@ -4,12 +4,22 @@
   box-sizing: border-box; }
 
 body {
-  font-family: 'Sora'; }
+  font-family: 'Sora';
+  font-size: 16px; }
 
+/* 
+0 - 600px: phone
+600 - 900px: tablet portrait
+900 - 1200px: tablet landscape
+[1200 - 1800] normal styles
+1800px +: big desktop
+*/
 .header {
-  max-width: 120em;
+  max-width: 100%;
   height: 6.25em;
   background-color: #002a3a; }
+  .header_img_logo2 {
+    display: none; }
   .header_menu {
     max-width: 68.75em;
     margin: 0 auto;
@@ -17,11 +27,17 @@ body {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center; }
+    @media (max-width: 1200px) {
+      .header_menu {
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        justify-items: center; } }
     .header_menu_logo {
       margin-top: 0.625em; }
 
 .header_menu_link {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
   gap: 0.9375em;
   list-style: none; }
@@ -138,7 +154,7 @@ body {
   border-radius: 0.9375em; }
 
 .app {
-  background-color: #dcdcdc;
+  background-color: #F0EEEE;
   padding: 4.0625em; }
   .app_container {
     width: 68.75em;
@@ -147,7 +163,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr; }
     .app_container .video-app {
-      box-shadow: 0px 0px 0px 10px #dcdcdc;
+      box-shadow: 0px 0px 0px 10px #F0EEEE;
       border-radius: 15px; }
     .app_container_info {
       display: flex;
@@ -182,7 +198,7 @@ body {
           color: #000;
           font-family: "Roboto";
           font-weight: 500;
-          background: linear-gradient(#dcdcdc, #dcdcdc) padding-box, linear-gradient(45deg, #87189D, #171C8F) border-box;
+          background: linear-gradient(#F0EEEE, #F0EEEE) padding-box, linear-gradient(45deg, #87189D, #171C8F) border-box;
           border: 2.5px solid transparent;
           border-radius: 10px;
           padding: 3px 8px;
@@ -244,7 +260,7 @@ body {
       align-items: center; }
     .agenda .agenda-bloco .domingo {
       padding-bottom: 0.625em;
-      border-bottom: 2px solid #dcdcdc; }
+      border-bottom: 2px solid #F0EEEE; }
 
 /* TAMANHOS VARIADOS DAS SUBMARCAS */
 .agenda-bloco a .icone-instagram {
@@ -260,7 +276,7 @@ body {
     flex-wrap: wrap;
     margin: auto;
     display: grid;
-    grid-template-columns: 10em 10em 10em 10em 10em 10em 10em;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     justify-items: center;
     align-items: center;
     gap: 20px; }
@@ -286,7 +302,7 @@ body {
 
 .dizimos {
   padding: 60px;
-  background-color: #dcdcdc;
+  background-color: #F0EEEE;
   padding-bottom: 100px; }
   .dizimos h2 {
     grid-column: 1/4;
@@ -346,5 +362,5 @@ body {
   font-family: "Roboto";
   padding: 16px;
   background-color: #002a3a;
-  color: #dcdcdc;
+  color: #F0EEEE;
   font-size: 10px; }
