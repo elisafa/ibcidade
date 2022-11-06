@@ -109,8 +109,9 @@ body {
           gap: 50px; }
         .video_container .video_horario h2 {
           font-size: 25px; } }
-    @media (max-width: 800px) {
+    @media (max-width: 850px) {
       .video_container {
+        max-width: 100%;
         margin: auto;
         grid-template-columns: 1fr;
         gap: 40px;
@@ -196,14 +197,17 @@ body {
     grid-template-columns: 1fr 1fr; }
     @media (max-width: 1100px) {
       .app_container {
-        width: 800px; } }
+        max-width: 800px; } }
     @media (max-width: 900px) {
-      .app_container .app_container_info h2 {
-        font-size: 25px; } }
-    @media (max-width: 800px) {
       .app_container {
+        max-width: 100%; }
+        .app_container .app_container_info h2 {
+          font-size: 25px; } }
+    @media (max-width: 850px) {
+      .app_container {
+        max-width: 100%;
         margin: auto;
-        grid-template-columns: 1fr;
+        grid-template-columns: 100%;
         gap: 40px;
         justify-content: center; }
         .app_container .app_container_info {
@@ -268,7 +272,13 @@ body {
     gap: 3.75em; }
     @media (max-width: 1100px) {
       .agenda_container {
-        width: 800px; } }
+        max-width: 100%; } }
+    @media (max-width: 800px) {
+      .agenda_container {
+        grid-template-columns: 1fr;
+        gap: 0; }
+        .agenda_container .agenda_container_imagens {
+          display: none; } }
     .agenda_container_imagens {
       display: flex;
       flex-direction: column;
@@ -334,7 +344,7 @@ body {
     @media (max-width: 1100px) {
       .areas .areas_container {
         grid-template-columns: 1fr 1fr 1fr;
-        width: 800px; } }
+        max-width: 100%; } }
     .areas .areas_container img {
       width: 130px;
       padding: 10px; }
@@ -354,6 +364,10 @@ body {
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent; }
+  @media (max-width: 850px) {
+    .areas h2 {
+      font-size: 25px;
+      margin-left: 80px; } }
 
 .dizimos {
   padding: 60px;
@@ -392,6 +406,18 @@ body {
     flex-direction: column;
     gap: 10px;
     justify-content: center; }
+  @media (max-width: 850px) {
+    .dizimos {
+      padding-bottom: 60px; }
+      .dizimos .dizimos {
+        max-width: 100%; }
+      .dizimos .dizimos_container {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 50px;
+        max-width: 100%; }
+        .dizimos .dizimos_container div {
+          border-right: none; } }
 
 .footer {
   padding: 80px;
@@ -408,9 +434,18 @@ body {
     @media (max-width: 1200px) {
       .footer_container {
         margin: auto;
-        width: 800px; } }
+        max-width: 100%; } }
     .footer_container img {
       width: 200px; }
+    @media (max-width: 850px) {
+      .footer_container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        justify-items: center;
+        font-size: 16px;
+        text-align: center; }
+        .footer_container .footer_icones {
+          justify-self: center; } }
   .footer_flex {
     display: flex;
     flex-direction: column;

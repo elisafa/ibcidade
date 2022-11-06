@@ -2,8 +2,6 @@
   padding: 80px;
   background-image: linear-gradient(to right, $cor3, $cor2);
 
-
-  
   &_container {
     font-size: 20px;
     font-family: "Roboto";
@@ -14,15 +12,29 @@
     margin: auto;
     align-items: center;
 
-    @media (max-width: 1200px){
+    @media (max-width: 1200px) {
       margin: auto;
-      width: 800px;
+      max-width: 100%;
+    }
+
+    img {
+      width: 200px;
+    }
+
+    @media (max-width:850px) {
+      // padding: 10px;
+      grid-template-columns: 1fr;
+      gap: 40px;
+      justify-items: center;
+      font-size: 16px;
+      text-align: center;
+
+      .footer_icones {
+        justify-self: center;
+      }
+    }
   }
 
-      img {
-        width: 200px;
-      }
-  }
 
   &_flex {
     display: flex;
@@ -37,7 +49,7 @@
   }
 }
 
-.marca{
+.marca {
   text-align: center;
   font-family: "Roboto";
   padding: 16px;

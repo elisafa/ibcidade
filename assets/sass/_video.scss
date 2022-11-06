@@ -19,7 +19,8 @@
       }
   }
 
-  @media (max-width:800px){
+  @media (max-width:850px){
+    max-width: 100%;
       margin: auto;
       grid-template-columns: 1fr;
       gap: 40px;

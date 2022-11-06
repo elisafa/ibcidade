@@ -5,36 +5,54 @@
 
 
 
-  h2{
+  h2 {
     grid-column: 1/4;
     margin-bottom: 30px;
     margin-left: 200px;
     @include titulo($cor6, $cor2)
   }
-  
-      &_container {
-        width: 55em;
-        font-family: "Roboto";
-        color: $cor1;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 80px;
-        margin: auto;
 
-        @media (max-width: 1200px){
-          margin: auto;
-          width: 800px;
-      }
+  &_container {
+    width: 55em;
+    font-family: "Roboto";
+    color: $cor1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 80px;
+    margin: auto;
 
-        div{
-          border-right: 1px solid $cor3;
-        }
+    @media (max-width: 1200px) {
+      margin: auto;
+      width: 800px;
+    }
+
+    div {
+      border-right: 1px solid $cor3;
+    }
   }
+
   .dizimos_flex {
     display: flex;
     flex-direction: column;
     gap: 10px;
     justify-content: center;
   }
-}
 
+  @media (max-width: 850px) {
+    padding-bottom: 60px;
+    .dizimos {
+      max-width: 100%;
+    }
+
+    .dizimos_container {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      gap: 50px;
+      max-width: 100%;
+
+      div {
+        border-right: none;
+      }
+    }
+  }
+}
