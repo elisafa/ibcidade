@@ -23,8 +23,11 @@
     <div class="header_menu">
       <div class="header_menu_logo">
         <a href="#">
-          <img class="header_img_logo1" src="./assets/images/marcas/marca-completa-1.svg" width="300" alt="Logo da IBCidade">
-          <img class="header_img_logo2" src="./assets/images/marcas/simbolo-1.svg" width="50" alt="Logo da IBCidade" >
+          <picture>
+            <source class="header_img_logo2" media="(max-width: 1100px)" srcset="./assets/images/marcas/simbolo-1.svg">
+            <img class="header_img_logo1" src="./assets/images/marcas/marca-completa-1.svg" width="300" alt="Logo da IBCidade">
+          <!-- <img class="header_img_logo2" src="./assets/images/marcas/simbolo-1.svg" width="50" alt="Logo da IBCidade" > -->
+        </picture>
         </a>
       </div>
       <nav>

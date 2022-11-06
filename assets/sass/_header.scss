@@ -3,9 +3,6 @@
   height: 6.25em;
   background-color: $cor1;
 
-  &_img_logo2 {
-    display: none;
-  }
 
   &_menu {
     max-width: 68.75em;
@@ -16,11 +13,16 @@
     align-items: center;
 
      @media (max-width: 1100px) {
-      grid-template-columns: 1fr;
-      margin: 0 auto;
+      grid-template-columns: auto auto;
+      margin:  auto;
       justify-items: center;
 
-      .header_menu_link{
+      .header_img_logo1{
+        max-width: 70px;
+        justify-self: right;
+      }
+
+       .header_menu_link{
         font-size: 14px;
         gap: 10px;
       }
