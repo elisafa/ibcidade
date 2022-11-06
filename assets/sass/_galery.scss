@@ -4,6 +4,12 @@
   height: calc(90vh - 80px);
   overflow: hidden;
 
+  @media (max-width: 1100px){
+    max-width: 900px;  
+  }
+
+  
+
     &_fotos{
       width: 500%;
       animation-name: animacao;

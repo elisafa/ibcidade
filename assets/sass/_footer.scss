@@ -1,6 +1,8 @@
 .footer {
   padding: 80px;
   background-image: linear-gradient(to right, $cor3, $cor2);
+
+
   
   &_container {
     font-size: 20px;
@@ -11,6 +13,11 @@
     grid-template-columns: 1fr 1fr 1fr;
     margin: auto;
     align-items: center;
+
+    @media (max-width: 1200px){
+      margin: auto;
+      width: 800px;
+  }
 
       img {
         width: 200px;
