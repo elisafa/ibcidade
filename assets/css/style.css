@@ -115,7 +115,7 @@ body {
         max-width: 100%;
         margin: auto;
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 20px;
         justify-content: center; }
         .video_container .video_horario {
           display: grid;
