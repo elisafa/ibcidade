@@ -15,22 +15,24 @@ body {
 */
 .header {
   max-width: 100%;
-  height: 6.25em;
+  height: 100px;
   background-color: #002a3a; }
   .header_menu {
     max-width: 68.75em;
     margin: 0 auto;
-    height: 6.25em;
-    display: grid;
-    grid-template-columns: auto 1fr;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
     align-items: center; }
     @media (max-width: 1100px) {
       .header_menu {
-        grid-template-columns: auto auto;
+        height: 80px;
+        grid-template-columns: 80px auto;
         margin: auto;
+        align-items: center;
         justify-items: center; }
         .header_menu .header_img_logo1 {
-          max-width: 70px;
+          max-width: 60px;
           justify-self: right; }
         .header_menu .header_menu_link {
           font-size: 14px;
@@ -63,7 +65,7 @@ body {
   overflow: hidden; }
   @media (max-width: 1100px) {
     .galery {
-      max-width: 900px; } }
+      max-width: 100%; } }
   .galery_fotos {
     width: 500%;
     animation-name: animacao;
@@ -72,10 +74,6 @@ body {
     .galery_fotos img {
       width: 20%;
       height: calc(90vh - 80px); }
-  @media (max-width: 900px) {
-    .galery {
-      max-width: 900px;
-      max-height: 300px; } }
 
 @keyframes animacao {
   0% {
