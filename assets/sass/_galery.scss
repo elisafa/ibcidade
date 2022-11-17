@@ -1,26 +1,30 @@
-.galery{
+.galery {
   margin: 1.25em auto;
   max-width: 68.75em;
   height: calc(90vh - 80px);
   overflow: hidden;
 
-  @media (max-width: 1100px){
-    max-width: 900px;  
+
+  @media (max-width: 1100px) {
+    max-width: 900px;
   }
 
-  
+  &_fotos {
+    width: 500%;
+    animation-name: animacao;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
 
-    &_fotos{
-      width: 500%;
-      animation-name: animacao;
-      animation-duration: 30s;
-      animation-iteration-count: infinite;
-      
-      img {
-          width: 20%;
-          height: calc(90vh - 80px);
-        }
+    img {
+      width: 20%;
+      height: calc(90vh - 80px);
     }
+  }
+  @media (max-width: 900px) {
+    max-width: 900px;
+    max-height: 300px;
+  }
+
 }
 
 

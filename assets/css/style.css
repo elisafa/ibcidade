@@ -72,6 +72,10 @@ body {
     .galery_fotos img {
       width: 20%;
       height: calc(90vh - 80px); }
+  @media (max-width: 900px) {
+    .galery {
+      max-width: 900px;
+      max-height: 300px; } }
 
 @keyframes animacao {
   0% {
@@ -104,7 +108,8 @@ body {
         width: 800px; } }
     @media (max-width: 900px) {
       .video_container {
-        margin: auto; }
+        margin: auto;
+        gap: 0; }
         .video_container .video_horario {
           justify-content: start;
           gap: 50px; }
@@ -115,7 +120,7 @@ body {
         max-width: 100%;
         margin: auto;
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 40px;
         justify-content: center; }
         .video_container .video_horario {
           display: grid;
@@ -123,6 +128,8 @@ body {
           row-gap: 30px; }
           .video_container .video_horario div {
             align-self: center; }
+          .video_container .video_horario .video-culto {
+            max-width: 200px; }
           .video_container .video_horario h2 {
             grid-column: 1/-1; }
         .video_container .video-culto {
