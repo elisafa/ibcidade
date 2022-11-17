@@ -56,7 +56,7 @@ body {
     border-radius: 5px; }
 
 .galery {
-  margin: 1.25em auto;
+  margin: 10px auto;
   max-width: 100%;
   overflow: hidden; }
   @media (max-width: 1100px) {
@@ -65,6 +65,11 @@ body {
       height: 80vh; }
       .galery_fotos {
         width: 800%; } }
+  @media (max-width: 950px) {
+    .galery {
+      max-width: 100%; }
+      .galery_fotos {
+        width: 100%; } }
   .galery_fotos {
     width: 500%;
     animation-name: animacao;

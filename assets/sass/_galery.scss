@@ -1,5 +1,5 @@
 .galery {
-  margin: 1.25em auto;
+  margin: 10px auto;
   max-width: 100%;
   // height: calc(90vh - 80px);
 
@@ -12,6 +12,13 @@
 
     &_fotos{
       width: 800%;
+    }
+  }
+  @media(max-width: 950px){
+    max-width: 100%;
+    
+    &_fotos{
+      width: 100%;
     }
   }
 
