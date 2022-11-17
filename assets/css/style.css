@@ -15,24 +15,21 @@ body {
 */
 .header {
   max-width: 100%;
-  height: 100px;
-  background-color: #002a3a; }
+  background-color: #002a3a;
+  padding: 15px; }
   .header_menu {
     max-width: 68.75em;
-    margin: 0 auto;
-    height: 80px;
+    margin: auto;
     display: flex;
     justify-content: space-around;
     align-items: center; }
     @media (max-width: 1100px) {
       .header_menu {
-        height: 80px;
         grid-template-columns: 80px auto;
-        margin: auto;
         align-items: center;
         justify-items: center; }
         .header_menu .header_img_logo1 {
-          max-width: 60px;
+          max-width: 50px;
           justify-self: right; }
         .header_menu .header_menu_link {
           font-size: 14px;
@@ -60,12 +57,14 @@ body {
 
 .galery {
   margin: 1.25em auto;
-  max-width: 68.75em;
-  height: calc(90vh - 80px);
+  max-width: 100%;
   overflow: hidden; }
   @media (max-width: 1100px) {
     .galery {
-      max-width: 100%; } }
+      max-width: 100%;
+      height: 80vh; }
+      .galery_fotos {
+        width: 800%; } }
   .galery_fotos {
     width: 500%;
     animation-name: animacao;
