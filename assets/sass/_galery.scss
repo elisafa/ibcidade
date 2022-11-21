@@ -1,72 +1,88 @@
-.galery {
-  margin: 30px auto 0 auto;
-  max-width: 95%;
-  height: calc(90vh-80px);
+.img-controle1{
+  background: center / contain no-repeat url("../images/banners/serie.jpg");
+}
+.img-controle2{
+  background: center / contain no-repeat url("../images/banners/cr.jpg");
+  
+}
+.img-controle3{
+  background: center / contain no-repeat url("../images/banners/culto-jovem.jpg");
+}
+
+.img-altura{
+  margin-top: 25px;
+  height: 80vh;
+}
+
+// .galery {
+//   margin: 30px auto 0 auto;
+//   max-width: 95%;
+//   height: calc(90vh-80px);
   
 
-  overflow: hidden;
+//   overflow: hidden;
 
 
-  @media (max-width: 1100px) {
-    max-width: 95%;
-    height: 50%;
+//   @media (max-width: 1100px) {
+//     max-width: 95%;
+//     height: 50%;
 
-    &_fotos{
-      width: 800%;
-    }
-  }
+//     &_fotos{
+//       width: 800%;
+//     }
+//   }
 
-  @media(max-width: 950px){
-    max-height: 50%;
+//   @media(max-width: 950px){
+//     max-height: 50%;
    
-  }
+//   }
 
-  &_fotos {
-    width: 500%;
-    animation-name: animacao;
-    animation-duration: 30s;
-    animation-iteration-count: infinite;
+//   &_fotos {
+//     width: 500%;
+//     animation-name: animacao;
+//     animation-duration: 30s;
+//     animation-iteration-count: infinite;
 
-    img {
-      width: 20%;
-      height: calc(90vh - 80px);
-    }
-  }
-
-
-}
+//     img {
+//       width: 20%;
+//       height: calc(90vh - 80px);
+//     }
+//   }
 
 
-@keyframes animacao {
-  0% {
-    margin-left: 0;
-  }
+// }
 
-  20% {
-    margin-left: 0;
-  }
 
-  25% {
-    margin-left: -100%;
-  }
+// @keyframes animacao {
+//   0% {
+//     margin-left: 0;
+//   }
 
-  45% {
-    margin-left: -100%;
-  }
+//   20% {
+//     margin-left: 0;
+//   }
 
-  50% {
-    margin-left: -201%;
-  }
+//   25% {
+//     margin-left: -100%;
+//   }
 
-  70% {
-    margin-left: -201%;
-  }
+//   45% {
+//     margin-left: -100%;
+//   }
 
-  90% {
-    margin-left: -300%;
-  }
+//   50% {
+//     margin-left: -201%;
+//   }
 
-  100% {
-    margin-left: -300%;
-  }
-}
+//   70% {
+//     margin-left: -201%;
+//   }
+
+//   90% {
+//     margin-left: -300%;
+//   }
+
+//   100% {
+//     margin-left: -300%;
+//   }
+// }

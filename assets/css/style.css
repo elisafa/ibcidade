@@ -55,46 +55,18 @@ body {
     background: linear-gradient(120deg, #ee2737, #ffa400);
     border-radius: 5px; }
 
-.galery {
-  margin: 30px auto 0 auto;
-  max-width: 95%;
-  height: calc(90vh-80px);
-  overflow: hidden; }
-  @media (max-width: 1100px) {
-    .galery {
-      max-width: 95%;
-      height: 50%; }
-      .galery_fotos {
-        width: 800%; } }
-  @media (max-width: 950px) {
-    .galery {
-      max-height: 50%; } }
-  .galery_fotos {
-    width: 500%;
-    animation-name: animacao;
-    animation-duration: 30s;
-    animation-iteration-count: infinite; }
-    .galery_fotos img {
-      width: 20%;
-      height: calc(90vh - 80px); }
+.img-controle1 {
+  background: center/contain no-repeat url("../images/banners/serie.jpg"); }
 
-@keyframes animacao {
-  0% {
-    margin-left: 0; }
-  20% {
-    margin-left: 0; }
-  25% {
-    margin-left: -100%; }
-  45% {
-    margin-left: -100%; }
-  50% {
-    margin-left: -201%; }
-  70% {
-    margin-left: -201%; }
-  90% {
-    margin-left: -300%; }
-  100% {
-    margin-left: -300%; } }
+.img-controle2 {
+  background: center/contain no-repeat url("../images/banners/cr.jpg"); }
+
+.img-controle3 {
+  background: center/contain no-repeat url("../images/banners/culto-jovem.jpg"); }
+
+.img-altura {
+  margin-top: 25px;
+  height: 80vh; }
 
 .video {
   padding: 4.0625em; }
