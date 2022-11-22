@@ -32,6 +32,9 @@ body {
 .header_menu_link a:hover:not(.link-ofertas) {
   color: #ffa400; }
 
+.navbar-toggler {
+  border-color: #fff; }
+
 .link-ofertas {
   background: linear-gradient(120deg, #ee2737, #ffa400);
   border-radius: 5px; }

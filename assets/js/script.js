@@ -13,7 +13,7 @@ function removerClass(){
 }
 
 function remover(){
-if(nav.clientWidth < 1140){
+if(nav.clientWidth < 1100){
   removerClass()
   fig1.classList.add('aparecer')
 }else{
