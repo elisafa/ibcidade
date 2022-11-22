@@ -2,13 +2,28 @@
   background-color: $cor1;
   padding: 20px;
 }
-.fig1, .fig_2{
-  margin-left: 80px;
+
+.header_menu{
+  margin-left: 100px;
 }
+
+.fig_1{
+  margin-left: 150px;
+}
+.fig_2{
+  margin-left: 60px;
+}
+
 .aparecer{
   display: none;
 }
 
+.header_menu_link a{
+  color: #fff;
+}
+.header_menu_link a:hover:not(.link-ofertas){
+  color: $cor2;
+}
 
 
 // .header {
@@ -65,7 +80,8 @@
 //     }
 //   }
 
-//   .link-ofertas {
-//     background: linear-gradient(120deg, $cor3, $cor2);
-//     border-radius: 5px;
-//   }
+.link-ofertas  {
+  background: linear-gradient(120deg, $cor3, $cor2);
+  border-radius: 5px;
+ 
+}

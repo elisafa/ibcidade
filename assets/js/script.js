@@ -19,7 +19,6 @@ if(nav.clientWidth < 1140){
 }else{
   removerClass()
   fig2.classList.add('aparecer')
-  // nav.style.height = '90px'
 }
 }
 window.addEventListener('resize', remover)

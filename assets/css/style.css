@@ -17,11 +17,27 @@ body {
   background-color: #002a3a;
   padding: 20px; }
 
-.fig1, .fig_2 {
-  margin-left: 80px; }
+.header_menu {
+  margin-left: 100px; }
+
+.fig_1 {
+  margin-left: 150px; }
+
+.fig_2 {
+  margin-left: 60px; }
 
 .aparecer {
   display: none; }
+
+.header_menu_link a {
+  color: #fff; }
+
+.header_menu_link a:hover:not(.link-ofertas) {
+  color: #ffa400; }
+
+.link-ofertas {
+  background: linear-gradient(120deg, #ee2737, #ffa400);
+  border-radius: 5px; }
 
 .img-controle1 {
   background: top/contain no-repeat url("../images/banners/serie.jpg"); }
