@@ -300,9 +300,6 @@ body {
     @media (max-width: 600px) {
       .areas .areas_container {
         grid-template-columns: 1fr 1fr; } }
-    @media (max-width: 500px) {
-      .areas .areas_container {
-        grid-template-columns: 1fr; } }
     .areas .areas_container img {
       width: 130px;
       padding: 10px; }
