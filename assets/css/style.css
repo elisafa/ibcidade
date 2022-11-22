@@ -35,6 +35,10 @@ body {
 .navbar-toggler {
   border-color: #fff; }
 
+@media (max-width: 700px) {
+  .fig_1 {
+    margin-left: 0; } }
+
 .link-ofertas {
   background: linear-gradient(120deg, #ee2737, #ffa400);
   border-radius: 5px; }
