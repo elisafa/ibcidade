@@ -21,12 +21,16 @@
 .header_menu_link a:hover:not(.link-ofertas){
   color: $cor2;
 }
+nav .offcanvas{
+  background-color: $cor1;
+}
 
+/*
 .navbar-toggler{
   width: 40px;
  border-color: #fff;
 }
-
+*/
 @media(max-width: 700px){
   .fig_1{
     width: 250px;
