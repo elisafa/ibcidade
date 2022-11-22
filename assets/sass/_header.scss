@@ -5,7 +5,7 @@
 
 
 .fig_1{
-  margin-left: 150px;
+  margin-left: 100px;
 }
 .fig_2{
   margin-left: 60px;
@@ -31,6 +31,12 @@ nav .offcanvas{
  border-color: #fff;
 }
 */
+@media(max-width: 1050px)
+{
+  .fig_1{
+    margin-left: 0;
+  }
+}
 @media(max-width: 700px){
   .fig_1{
     width: 250px;
