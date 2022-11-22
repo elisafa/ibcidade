@@ -23,6 +23,52 @@
 </head>
 
 <body>
+  <nav class="navbar navbar-expand-lg header sticky-top">
+    <div class="container-fluid header_menu">
+      <a class="navbar-brand" href="#">
+        <img class="fig_1 aparecer" src="./assets/images/marcas/marca-completa-1.svg" alt="" width="300px">
+        <img class="fig_2" src="./assets/images/marcas/simbolo-1.svg" alt="" width="60px">
+        <picture>
+          <source class="header_img_logo2" media="(max-width: 1150px)" srcset="./assets/images/marcas/simbolo-1.svg">
+          <!-- <img class="header_img_logo1" src="./assets/images/marcas/marca-completa-1.svg" width="300"
+            alt="Logo da IBCidade"> -->
+        </picture>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        
+        <ul class="navbar-nav header_menu_link mx-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#">Quem somos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">PGMs</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Novas gerações</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Local e contato</a></li>
+          <li class="nav-item"><a class="nav-link" class="link-ofertas" href="#">Ofertas</a></li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+         
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+<!-- 
   <header class="header">
     <div class="header_menu">
       <div class="header_menu_logo">
@@ -31,7 +77,6 @@
             <source class="header_img_logo2" media="(max-width: 1100px)" srcset="./assets/images/marcas/simbolo-1.svg">
             <img class="header_img_logo1" src="./assets/images/marcas/marca-completa-1.svg" width="300"
               alt="Logo da IBCidade">
-            <!-- <img class="header_img_logo2" src="./assets/images/marcas/simbolo-1.svg" width="50" alt="Logo da IBCidade" > -->
           </picture>
         </a>
       </div>
@@ -45,18 +90,18 @@
         </ul>
       </nav>
     </div>
-  </header>
+  </header> -->
 
   <!-- SEÇÃO BANNER -->
 
-  <div class="container-xxl">
+  <div class="container-fluid">
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner img-altura">
-        <div class="carousel-item h-100 active img-controle1" data-bs-interval="3000">
+        <div class="carousel-item active img-controle1" data-bs-interval="4000">
         </div>
-        <div class="carousel-item h-100 img-controle2" data-bs-interval="3000">
+        <div class="carousel-item img-controle2" data-bs-interval="4000">
         </div>
-        <div class="carousel-item h-100 img-controle3" data-bs-interval="3000">
+        <div class="carousel-item img-controle3" data-bs-interval="4000">
         </div>
       </div>
     </div>
@@ -277,6 +322,9 @@
   <!-- Script Ionicon -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- Script JavaScript -->
+  <script src="assets/js/script.js"></script>
 </body>
 
 </html>

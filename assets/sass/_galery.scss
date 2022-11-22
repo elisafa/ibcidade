@@ -1,17 +1,18 @@
 .img-controle1{
-  background: center / contain no-repeat url("../images/banners/serie.jpg");
+  background: top / contain no-repeat url("../images/banners/serie.jpg");
 }
 .img-controle2{
-  background: center / contain no-repeat url("../images/banners/cr.jpg");
-  
+  background: top / contain no-repeat url("../images/banners/cr.jpg");
 }
 .img-controle3{
-  background: center / contain no-repeat url("../images/banners/culto-jovem.jpg");
+  background: top / contain no-repeat url("../images/banners/culto-jovem.jpg");
 }
 
-.img-altura{
-  height: 80vh;
+.carousel-item{
+  height: 90vh;
 }
+
+
 
 // .galery {
 //   margin: 30px auto 0 auto;
