@@ -33,6 +33,7 @@ body {
   color: #ffa400; }
 
 .navbar-toggler {
+  width: 40px;
   border-color: #fff; }
 
 @media (max-width: 700px) {
