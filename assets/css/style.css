@@ -174,6 +174,17 @@ nav .offcanvas {
       color: #fff;
       background: linear-gradient(to right, #0077C8, #26D07C); }
 
+@media (max-width: 500px) {
+  .video {
+    padding: 45px; }
+  .video_container {
+    gap: 30px; }
+  .video-culto {
+    justify-self: start;
+    width: 150px;
+    margin-left: 0px;
+    display: none; } }
+
 .app-container,
 .agenda-container,
 .dizimos-container {
@@ -228,6 +239,9 @@ nav .offcanvas {
           gap: 20px; }
         .app_container .app-video {
           justify-self: center; } }
+    @media (max-width: 500px) {
+      .app_container .app-video {
+        display: none; } }
     .app_container .video-app {
       box-shadow: 0px 0px 0px 10px #F0EEEE;
       border-radius: 15px; }

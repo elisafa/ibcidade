@@ -77,21 +77,22 @@
   }
 }
 
-// @media(max-width:500px) {
-//   .video {
-//     padding: 45px;
-//   }
+ @media(max-width:500px) {
+   .video {
+     padding: 45px;
+   }
 
-//   .video_container {
-//     gap: 30px;
-//   }
+   .video_container {
+     gap: 30px;
+   }
 
-//   .video-culto {
-//     justify-self: start;
-//     width: 150px;
-//     margin-left: 0px;
-//   }
-// }
+   .video-culto {
+     justify-self: start;
+     width: 150px;
+     margin-left: 0px;
+     display: none
+   }
+ }
 
 .app-container,
 .agenda-container,
