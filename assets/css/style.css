@@ -134,7 +134,8 @@ nav .offcanvas {
           .video_container .video_horario div {
             align-self: center; }
           .video_container .video_horario .video-culto {
-            max-width: 200px; }
+            max-width: 150px;
+            grid-column: 1/1; }
           .video_container .video_horario h2 {
             grid-column: 1/-1; }
         .video_container .video-culto {
