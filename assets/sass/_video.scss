@@ -1,6 +1,6 @@
 .video {
   padding: 4.0625em;
-
+   
   &_container {
     @include container;
 
@@ -80,18 +80,15 @@
  @media(max-width:500px) {
    .video {
      padding: 45px;
-   }
 
+     &-app{
+      width: 400px;
+     }
+   }
    .video_container {
      gap: 30px;
    }
 
-   .video-culto {
-     justify-self: start;
-     width: 150px;
-     margin-left: 0px;
-     display: none
-   }
  }
 
 .app-container,
