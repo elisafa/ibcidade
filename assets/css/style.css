@@ -430,6 +430,28 @@ nav .offcanvas {
         max-width: 100%; }
         .dizimos .dizimos_container div {
           border-right: none; } }
+  @media (max-width: 850px) and (max-width: 600px) {
+    .dizimos h2 {
+      text-align: center; }
+    .dizimos .dizimos_container {
+      font-size: 14px;
+      line-height: 1;
+      text-align: center;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px; }
+    .dizimos .pix {
+      grid-column: 1/4; } }
+  @media (max-width: 850px) and (max-width: 500px) {
+    .dizimos .dizimos_container {
+      grid-template-columns: 1fr;
+      font-size: 14px;
+      line-height: 1;
+      text-align: center;
+      gap: 20px; }
+    .dizimos .pix {
+      grid-column: 1/2; }
+    .dizimos .dizimos_flex {
+      padding: 10px 0 10px 0; } }
 
 .footer {
   padding: 80px;

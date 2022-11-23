@@ -58,5 +58,38 @@
         border-right: none;
       }
     }
+    @media(max-width: 600px){
+      h2{
+        // font-size: 25px;
+        text-align: center;
+      }
+      .dizimos_container{
+        font-size: 14px;
+        line-height: 1;
+        text-align: center;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+      .pix{
+        grid-column: 1/4;
+      }
+    }
+@media(max-width: 500px){
+  .dizimos_container{
+    grid-template-columns: 1fr;
+    font-size: 14px;
+    line-height: 1;
+    text-align: center;
+    gap: 20px;
+  }
+  .pix{
+    grid-column: 1/2;
+  }
+  .dizimos_flex{
+    padding: 10px 0 10px 0;
   }
 }
+
+  }
+}
+
