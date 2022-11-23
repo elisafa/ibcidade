@@ -42,10 +42,16 @@
     margin-bottom: 200px;
   }
 }
-@media(max-width: 650px){
+@media(max-width: 600px){
   .tamanhoSlides{
     height: 10em;
     margin-bottom: 200px;
+  }
+}
+@media(max-width: 500px){
+  .tamanhoSlides{
+    height: 10em;
+    margin-bottom: 100px;
   }
 }
 
