@@ -74,24 +74,30 @@ nav .offcanvas {
 
 .tamanhoSlides {
   height: 25em;
-  margin-bottom: 300px; }
+  margin-bottom: 150px; }
 
 .carousel-item {
   height: 90vh; }
 
 @media (max-width: 1200px) {
   .tamanhoSlides {
-    height: 10em;
+    height: 20em;
     margin-bottom: 250px; } }
 
 @media (max-width: 1000px) {
   .tamanhoSlides {
+    height: 25em;
     margin-bottom: 200px; } }
 
 @media (max-width: 900px) {
   .tamanhoSlides {
     height: 20em;
-    margin-bottom: 150px; } }
+    margin-bottom: 250px; } }
+
+@media (max-width: 850px) {
+  .tamanhoSlides {
+    height: 15em;
+    margin-bottom: 200px; } }
 
 .video {
   padding: 4.0625em; }
