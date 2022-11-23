@@ -73,11 +73,11 @@ nav .offcanvas {
   background: top/contain no-repeat url("../images/banners/culto-jovem.jpg"); }
 
 .tamanhoSlides {
-  height: 25em;
+  height: 30em;
   margin-bottom: 150px; }
 
 .carousel-item {
-  height: 90vh; }
+  height: 85vh; }
 
 @media (max-width: 1200px) {
   .tamanhoSlides {
@@ -97,6 +97,11 @@ nav .offcanvas {
 @media (max-width: 850px) {
   .tamanhoSlides {
     height: 15em;
+    margin-bottom: 200px; } }
+
+@media (max-width: 650px) {
+  .tamanhoSlides {
+    height: 10em;
     margin-bottom: 200px; } }
 
 .video {
