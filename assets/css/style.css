@@ -17,6 +17,10 @@ body {
   background-color: #002a3a;
   padding: 20px; }
 
+.container-fluid {
+  margin-bottom: 0;
+  padding-bottom: 0; }
+
 .fig_1 {
   margin-left: 100px; }
 
@@ -68,8 +72,26 @@ nav .offcanvas {
 .img-controle3 {
   background: top/contain no-repeat url("../images/banners/culto-jovem.jpg"); }
 
+.tamanhoSlides {
+  height: 25em;
+  margin-bottom: 300px; }
+
 .carousel-item {
   height: 90vh; }
+
+@media (max-width: 1200px) {
+  .tamanhoSlides {
+    height: 10em;
+    margin-bottom: 250px; } }
+
+@media (max-width: 1000px) {
+  .tamanhoSlides {
+    margin-bottom: 200px; } }
+
+@media (max-width: 900px) {
+  .tamanhoSlides {
+    height: 20em;
+    margin-bottom: 150px; } }
 
 .video {
   padding: 4.0625em; }
