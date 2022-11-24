@@ -2,11 +2,9 @@
   background: top / contain no-repeat url("../images/banners/serie.jpg");
 }
 .img-controle2{
-
   background: top / contain no-repeat url("../images/banners/cr.jpg");
 }
 .img-controle3{
-
   background: top / contain  no-repeat url("../images/banners/culto-jovem.jpg");
 }
 .tamanhoSlides{
@@ -54,11 +52,9 @@
     margin-bottom: 100px;
   }
 }
-
-
-// @media(max-width: 1100px){
-//   .tamanhoSlides{
-//     // height: 20em;
-//     margin-bottom: 350px;
-//   }
-// }
+@media(max-width: 400px){
+  .tamanhoSlides{
+    height: 8em;
+    margin-bottom: 100px;
+  }
+}

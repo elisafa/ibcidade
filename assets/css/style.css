@@ -103,6 +103,11 @@ nav .offcanvas {
     height: 10em;
     margin-bottom: 100px; } }
 
+@media (max-width: 400px) {
+  .tamanhoSlides {
+    height: 8em;
+    margin-bottom: 100px; } }
+
 .video {
   padding: 4.0625em; }
   .video_container {
@@ -179,6 +184,8 @@ nav .offcanvas {
 @media (max-width: 400px) {
   .video {
     padding: 45px; }
+    .video .video_horario h2 {
+      font-size: 25px; }
     .video-celebracao {
       width: 350px; }
   .video_container {
@@ -247,7 +254,14 @@ nav .offcanvas {
         width: 400px; } }
     @media (max-width: 400px) {
       .app_container .app-video .video-app {
-        width: 350px; } }
+        width: 350px; }
+      .app_container .app_container_info {
+        align-items: center; }
+      .app_container .app_container_info p {
+        text-align: center; }
+      .app_container .app_container_info h2 {
+        text-align: center;
+        font-size: 25px; } }
     .app_container .video-app {
       box-shadow: 0px 0px 0px 10px #F0EEEE;
       border-radius: 15px; }
@@ -301,6 +315,18 @@ nav .offcanvas {
   @media (max-width: 500px) {
     .agenda {
       padding: 40px 40px 0 40px; } }
+  @media (max-width: 400px) {
+    .agenda {
+      padding: 25px 25px 0 25px; }
+      .agenda .agenda_container div h2 {
+        text-align: center;
+        font-size: 25px; }
+      .agenda .agenda_container p {
+        text-align: center; }
+      .agenda .agenda-bloco h3 {
+        font-size: 20px; }
+      .agenda .agenda-flex {
+        font-size: 16px; } }
   .agenda_container {
     width: 55em;
     display: grid;
@@ -412,6 +438,13 @@ nav .offcanvas {
     .areas h2 {
       font-size: 25px;
       margin-left: 0px; } }
+  @media (max-width: 400px) {
+    .areas {
+      padding: 40px; }
+      .areas h2 {
+        text-align: center;
+        font-size: 25px;
+        margin-left: 0px; } }
 
 .dizimos {
   padding: 60px;

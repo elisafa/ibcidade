@@ -5,6 +5,23 @@
     padding: 40px 40px 0 40px;
   }
 
+  @media(max-width:400px){
+    padding: 25px 25px 0 25px;
+    .agenda_container div h2{
+      text-align: center;
+      font-size: 25px;
+    }
+    .agenda_container p{
+      text-align: center;
+    }
+    .agenda-bloco h3{
+      font-size: 20px;
+    }
+    .agenda-flex{
+      font-size: 16px;
+    }
+  }
+
   &_container {
     width: 55em;
     display: grid;
@@ -24,7 +41,6 @@
           display: none;
         }
     }
-   
 
     &_imagens {
       display: flex;
@@ -38,8 +54,6 @@
         filter: brightness(0);
         opacity: 15%;
       }
-
-
     }
 
     h2 {
