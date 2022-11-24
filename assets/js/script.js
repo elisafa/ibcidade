@@ -1,25 +1,22 @@
-const img = document.querySelectorAll('.navbar-brand img')
-const fig1 = document.querySelector('.fig_1')
-const fig2 = document.querySelector('.fig_2')
-const nav = document.querySelector('nav')
+function animacaoScroll() {
+  const sections = document.querySelectorAll('.js-scroll')
+  if (sections.length) {
+    const windowMetade = window.innerHeight * 0.8;
 
-console.log(nav.clientWidth)
-
-
-function removerClass(){
-  img.forEach(item => {
-    item.classList.remove('aparecer')
-  })
+    function animaScroll() {
+      sections.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+        const isSectionVisible = sectionTop - windowMetade < 0
+        if (isSectionVisible) {
+          section.classList.add('ativo')
+        } else {
+          section.classList.remove('ativo')
+        }
+      })
+    }
+    animaScroll()
+    window.addEventListener('scroll', animaScroll);
+  }
 }
-
-function remover(){
-if(nav.clientWidth < 1100){
-  removerClass()
-  fig1.classList.add('aparecer')
-}else{
-  removerClass()
-  fig2.classList.add('aparecer')
-}
-}
-window.addEventListener('resize', remover)
+animacaoScroll()
 
