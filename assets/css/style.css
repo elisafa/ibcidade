@@ -16,16 +16,12 @@ body {
 .header {
   background-color: #002a3a;
   padding: 20px; }
+  .header_menu {
+    width: 1100px; }
 
 .container-fluid {
   margin-bottom: 0;
   padding-bottom: 0; }
-
-.fig_1 {
-  margin-left: 100px; }
-
-.fig_2 {
-  margin-left: 60px; }
 
 .aparecer {
   display: none; }
@@ -571,15 +567,18 @@ nav .offcanvas {
     font-size: 50px; }
 
 .marca {
-  padding: 0; }
-
-.marca h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   font-family: "Roboto";
-  padding: 16px;
+  font-size: 16px;
+  padding: 10px;
   background-color: #002a3a;
-  color: #F0EEEE;
-  font-size: 16px; }
+  color: #F0EEEE; }
+  .marca_container h3 {
+    font-size: 14px;
+    margin-bottom: 0; }
   @media (max-width: 500px) {
-    .marca h3 h3 {
-      font-size: 14px; } }
+    .marca h3 {
+      font-size: 12px; } }

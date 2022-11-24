@@ -1,18 +1,23 @@
 .header{
   background-color: $cor1;
   padding: 20px;
+
+  &_menu{
+    width: 1100px;
+  }
+
 }
 .container-fluid{
   margin-bottom: 0;
   padding-bottom: 0;
 }
 
-.fig_1{
-  margin-left: 100px;
-}
-.fig_2{
-  margin-left: 60px;
-}
+// .fig_1{
+//   margin-left: 100px;
+// }
+// .fig_2{
+//   margin-left: 60px;
+// }
 
 .aparecer{
   display: none;

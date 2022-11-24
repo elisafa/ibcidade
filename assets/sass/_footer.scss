@@ -65,20 +65,31 @@
   }
 
 }
+
+
 .marca{
-  padding: 0;
-}
-.marca h3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+
   font-family: "Roboto";
-  padding: 16px;
+  font-size: 16px;
+  padding: 10px;
   background-color: $cor1;
   color: $cor10;
-  font-size: 16px;
-
-  @media(max-width:500px){
+  
+  &_container {
     h3{
       font-size: 14px;
+      margin-bottom: 0;
+    }
+  }
+
+  @media(max-width:500px){
+    
+    h3{
+      font-size: 12px;
     }
   }
 }
