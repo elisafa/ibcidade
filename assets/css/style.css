@@ -440,7 +440,7 @@ nav .offcanvas {
       margin-left: 0px; } }
   @media (max-width: 400px) {
     .areas {
-      padding: 40px; }
+      padding: 30px 40px 40px 40px; }
       .areas h2 {
         text-align: center;
         font-size: 25px;
