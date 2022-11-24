@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box; }
 
+*:focus {
+  outline: none; }
+
 body {
   font-family: 'Sora'; }
 
@@ -31,17 +34,22 @@ body {
   margin-bottom: 0;
   padding-bottom: 0; }
 
-.aparecer {
-  display: none; }
-
 .header_menu_link a {
   color: #fff; }
 
 .header_menu_link a:hover:not(.link-ofertas) {
   color: #ffa400; }
 
+.offcanvas-header {
+  border-bottom: 1px solid #fff;
+  margin-bottom: 20px; }
+
 nav .offcanvas {
   background-color: #002a3a; }
+
+.navbar-nav {
+  align-items: center;
+  gap: 20px; }
 
 @media (max-width: 1050px) {
   .fig_1 {
@@ -59,7 +67,9 @@ nav .offcanvas {
 
 .link-ofertas {
   background: linear-gradient(120deg, #ee2737, #ffa400);
-  border-radius: 5px; }
+  padding: 10px 20px;
+  border-radius: 5px;
+  justify-content: start; }
 
 .img-controle1 {
   background: top/contain no-repeat url("../images/banners/serie.jpg"); }

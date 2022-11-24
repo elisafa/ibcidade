@@ -1,66 +1,82 @@
-.header{
+.header {
   background-color: $cor1;
   padding: 20px;
 
-  &_menu{
+  &_menu {
     width: 1100px;
   }
 
- .navbar-toggler-icon{
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   }
 
-  .navbar-toggler{
+  .navbar-toggler {
     padding: 2px 4px;
     border: 1px solid #fff;
   }
 
-  .btn-close{
+
+  .btn-close {
     background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e") center/ 1em auto no-repeat;
     opacity: 1;
   }
 
 }
-.container-fluid{
+
+.container-fluid {
   margin-bottom: 0;
   padding-bottom: 0;
 }
 
-.aparecer{
-  display: none;
-}
+// .aparecer{
+//    display: none;
+// }
 
-.header_menu_link a{
+.header_menu_link a {
   color: #fff;
 }
-.header_menu_link a:hover:not(.link-ofertas){
+
+.header_menu_link a:hover:not(.link-ofertas) {
   color: $cor2;
 }
-nav .offcanvas{
+
+.offcanvas-header{
+border-bottom: 1px solid #fff;
+margin-bottom: 20px;
+}
+
+nav .offcanvas {
   background-color: $cor1;
 }
 
-@media(max-width: 1050px)
-{
-  .fig_1{
+.navbar-nav {
+  align-items: center;
+  gap: 20px;
+}
+
+@media(max-width: 1050px) {
+  .fig_1 {
     margin-left: 0;
   }
 }
-@media(max-width: 700px){
-  .fig_1{
+
+@media(max-width: 700px) {
+  .fig_1 {
     width: 250px;
     margin-left: 0;
   }
 }
-@media(max-width: 500px){
-  .fig_1{
+
+@media(max-width: 500px) {
+  .fig_1 {
     width: 200px;
     margin-left: 0;
   }
 }
 
-.link-ofertas  {
+.link-ofertas {
   background: linear-gradient(120deg, $cor3, $cor2);
+  padding: 10px 20px;
   border-radius: 5px;
- 
+  justify-content: start;
 }
