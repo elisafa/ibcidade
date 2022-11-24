@@ -237,8 +237,8 @@ nav .offcanvas {
         .app_container .app-video {
           justify-self: center; } }
     @media (max-width: 500px) {
-      .app_container .app-app {
-        width: 150px; } }
+      .app_container .app-video .video-app {
+        width: 400px; } }
     .app_container .video-app {
       box-shadow: 0px 0px 0px 10px #F0EEEE;
       border-radius: 15px; }
@@ -396,6 +396,10 @@ nav .offcanvas {
     .areas h2 {
       font-size: 25px;
       margin-left: 80px; } }
+  @media (max-width: 500px) {
+    .areas h2 {
+      font-size: 25px;
+      margin-left: 0px; } }
 
 .dizimos {
   padding: 60px;

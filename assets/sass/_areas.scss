@@ -19,7 +19,7 @@
       grid-template-columns: 1fr 1fr;
     }
 
-    img {
+      img {
       width: 130px;
       padding: 10px;
 
@@ -29,6 +29,7 @@
       }
     }
   }
+
 
   h2 {
     margin-bottom: 30px;
@@ -40,6 +41,13 @@
     h2 {
       font-size: 25px;
       margin-left: 80px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    h2 {
+      font-size: 25px;
+      margin-left: 0px;
     }
   }
 }
