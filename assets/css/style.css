@@ -518,6 +518,9 @@ nav .offcanvas {
       grid-column: 1/2; }
     .dizimos .dizimos_flex {
       padding: 10px 0 10px 0; } }
+  @media (max-width: 850px) and (max-width: 400px) {
+    .dizimos h2 {
+      font-size: 25px; } }
 
 .footer {
   padding: 80px;
