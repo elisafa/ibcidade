@@ -39,12 +39,6 @@ body {
 nav .offcanvas {
   background-color: #002a3a; }
 
-/*
-.navbar-toggler{
-  width: 40px;
- border-color: #fff;
-}
-*/
 @media (max-width: 1050px) {
   .fig_1 {
     margin-left: 0; } }
