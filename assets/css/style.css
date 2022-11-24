@@ -177,7 +177,7 @@ nav .offcanvas {
 @media (max-width: 500px) {
   .video {
     padding: 45px; }
-    .video-app {
+    .video-celebracao {
       width: 400px; }
   .video_container {
     gap: 30px; } }
@@ -237,8 +237,8 @@ nav .offcanvas {
         .app_container .app-video {
           justify-self: center; } }
     @media (max-width: 500px) {
-      .app_container .app-celebracao {
-        width: 400px; } }
+      .app_container .app-app {
+        width: 150px; } }
     .app_container .video-app {
       box-shadow: 0px 0px 0px 10px #F0EEEE;
       border-radius: 15px; }
