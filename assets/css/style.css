@@ -291,7 +291,7 @@ nav .offcanvas {
   padding: 65px 65px 0 65px; }
   @media (max-width: 500px) {
     .agenda {
-      padding: 65px 40px 0 40px; } }
+      padding: 40px 40px 0 40px; } }
   .agenda_container {
     width: 55em;
     display: grid;
@@ -411,6 +411,7 @@ nav .offcanvas {
   .dizimos h2 {
     grid-column: 1/4;
     margin-bottom: 30px;
+    margin-left: 200px;
     font-family: "Sora";
     font-size: 1.875em;
     font-weight: 700;
@@ -442,11 +443,10 @@ nav .offcanvas {
     justify-content: center; }
   @media (max-width: 850px) {
     .dizimos {
-      padding-bottom: 60px; }
-      .dizimos .dizimos {
-        max-width: 100%; }
-        .dizimos .dizimos section .area-titulo-posicao {
-          margin-left: 0; }
+      padding-bottom: 60px;
+      max-width: 100%; }
+      .dizimos h2 {
+        margin-left: 0; }
       .dizimos .dizimos_container {
         grid-template-columns: 1fr 1fr 1fr;
         justify-items: center;
@@ -524,6 +524,9 @@ nav .offcanvas {
   .footer_icones {
     justify-self: end;
     font-size: 50px; }
+
+.marca {
+  padding: 0; }
 
 .marca h3 {
   text-align: center;
