@@ -288,7 +288,10 @@ nav .offcanvas {
             color: #000; }
 
 .agenda {
-  padding: 4.0625em 4.0625em 0 4.0625em; }
+  padding: 65px 65px 0 65px; }
+  @media (max-width: 500px) {
+    .agenda {
+      padding: 65px 40px 0 40px; } }
   .agenda_container {
     width: 55em;
     display: grid;
