@@ -38,6 +38,13 @@
         }
       }
     }
+    @media(max-width: 400px){
+      .app-video{
+       .video-app{
+          width: 360px;
+        }
+      }
+    }
 
     .video-app {
       box-shadow: 0px 0px 0px 10px $cor10;

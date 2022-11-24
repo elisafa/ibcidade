@@ -88,8 +88,25 @@
    .video_container {
      gap: 30px;
    }
-
  }
+ @media(max-width:400px) {
+  .video {
+    padding: 45px;
+
+    &-celebracao{
+     width: 360px;
+    }
+  }
+  .video_container {
+    gap: 30px;
+    .video_horario h2{
+      text-align: center
+    }
+    .video_horario div{
+      justify-self: center;
+    }
+  }
+}
 
 .app-container,
 .agenda-container,

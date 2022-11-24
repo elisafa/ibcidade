@@ -176,6 +176,18 @@ nav .offcanvas {
   .video_container {
     gap: 30px; } }
 
+@media (max-width: 400px) {
+  .video {
+    padding: 45px; }
+    .video-celebracao {
+      width: 360px; }
+  .video_container {
+    gap: 30px; }
+    .video_container .video_horario h2 {
+      text-align: center; }
+    .video_container .video_horario div {
+      justify-self: center; } }
+
 .app-container,
 .agenda-container,
 .dizimos-container {
@@ -233,6 +245,9 @@ nav .offcanvas {
     @media (max-width: 500px) {
       .app_container .app-video .video-app {
         width: 400px; } }
+    @media (max-width: 400px) {
+      .app_container .app-video .video-app {
+        width: 360px; } }
     .app_container .video-app {
       box-shadow: 0px 0px 0px 10px #F0EEEE;
       border-radius: 15px; }
