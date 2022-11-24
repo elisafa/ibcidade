@@ -324,9 +324,9 @@ nav .offcanvas {
       .agenda .agenda_container p {
         text-align: center; }
       .agenda .agenda-bloco h3 {
-        font-size: 20px; }
+        font-size: 16px; }
       .agenda .agenda-flex {
-        font-size: 16px; } }
+        font-size: 14px; } }
   .agenda_container {
     width: 55em;
     display: grid;
