@@ -1,11 +1,14 @@
 .areas {
+  background-color:$cor10;
+  max-width: 100%;
   padding: 60px;
 
   .areas_container {
+    max-width: 1100px;
     flex-wrap: wrap;
     margin: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     align-items: center;
     gap: 20px;
@@ -20,7 +23,7 @@
     }
 
       img {
-      width: 130px;
+      width: 150px;
       padding: 10px;
 
       &:hover {
@@ -30,10 +33,9 @@
     }
   }
 
-
   h2 {
-    margin-bottom: 30px;
-    margin-left: 200px;
+    text-align: center;
+    margin-bottom: 60px;
     @include titulo($cor4, $cor5)
   }
 
