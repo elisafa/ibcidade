@@ -25,18 +25,12 @@ body {
   opacity: 1;
   transform: translate3d(0, 0, 0); }
 
-.fundobody {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  z-index: -100; }
-
 .header {
   position: relative;
   background-color: #002a3a;
-  padding: 20px; }
+  padding: 15px; }
   .header_menu {
-    width: 1300px; }
+    width: 900px; }
   .header .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
   .header .navbar-toggler {
@@ -54,11 +48,13 @@ body {
   border-bottom: 1px solid #ffa400;
   color: #ffa400; }
 
-.header_menu_link a:active {
-  border-bottom: 1px solid #ffa400; }
-
 .dropdown-menu {
+  border-color: #fff;
   background-color: #002a3a; }
+
+.dropdown-item:hover {
+  border-bottom: none !important;
+  background-color: transparent; }
 
 .offcanvas-header {
   border-bottom: 1px solid #fff;
@@ -69,10 +65,12 @@ nav .offcanvas {
 
 .navbar-nav {
   align-items: center;
+  margin-right: 0;
+  padding-right: 0;
   gap: 20px; }
 
-.dropdown-menu {
-  border-color: #fff; }
+img.fig_1 {
+  margin-left: 20px; }
 
 @media (max-width: 1050px) {
   .fig_1 {
@@ -90,9 +88,8 @@ nav .offcanvas {
 
 .link-ofertas {
   background: linear-gradient(120deg, #ee2737, #ffa400);
-  padding: 10px 25px;
-  border-radius: 5px;
-  justify-content: start; }
+  padding: 10px;
+  border-radius: 5px; }
 
 .img-controle1 {
   background: top/contain no-repeat url("../images/banners/serie.jpg"); }
@@ -146,9 +143,9 @@ nav .offcanvas {
     margin-bottom: 100px; } }
 
 .video {
-  padding: 4.0625em; }
+  padding: 65px; }
   .video_container {
-    width: 68.75em;
+    width: 1000px;
     flex-wrap: wrap;
     margin: auto;
     display: grid;
@@ -235,7 +232,7 @@ nav .offcanvas {
 .app-container,
 .agenda-container,
 .dizimos-container {
-  width: 68.75em;
+  width: 1000px;
   flex-wrap: wrap;
   margin: auto;
   display: grid;
@@ -262,7 +259,7 @@ nav .offcanvas {
   background-color: #F0EEEE;
   padding: 4.0625em; }
   .app_container {
-    width: 68.75em;
+    width: 1000px;
     flex-wrap: wrap;
     margin: auto;
     display: grid;

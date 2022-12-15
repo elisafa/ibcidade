@@ -1,18 +1,10 @@
-.fundobody{
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  // float: left;
-  z-index: -100;
-}
-
 .header {
   position: relative;
   background-color: $cor1;
-  padding: 20px;
+  padding: 15px;
 
   &_menu {
-    width: 1300px;
+    width: 900px;
   }
 // MENU HAMBURGURE
   .navbar-toggler-icon {
@@ -41,14 +33,17 @@
   border-bottom: 1px solid $cor2;
   color: $cor2;
 }
-.header_menu_link a:active{
-  border-bottom: 1px solid $cor2;
-}
 
 .dropdown-menu{
+  border-color: #fff;
   background-color: $cor1;
 }
 
+.dropdown-item:hover{
+  border-bottom: none !important;
+  background-color: transparent;
+  
+}
 
 .offcanvas-header{
 border-bottom: 1px solid #fff;
@@ -61,12 +56,15 @@ nav .offcanvas {
 
 .navbar-nav {
   align-items: center;
+  margin-right: 0;
+  padding-right: 0;
   gap: 20px;
 }
-
-.dropdown-menu {
-  border-color: #fff;
+img.fig_1{
+  margin-left: 20px;
 }
+
+
 
 @media(max-width: 1050px) {
   .fig_1 {
@@ -90,7 +88,6 @@ nav .offcanvas {
 
 .link-ofertas {
   background: linear-gradient(120deg, $cor3, $cor2);
-  padding: 10px 25px;
+  padding: 10px;
   border-radius: 5px;
-  justify-content: start;
 }
