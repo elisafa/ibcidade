@@ -30,7 +30,7 @@ body {
   background-color: #002a3a;
   padding: 15px; }
   .header_menu {
-    width: 900px; }
+    width: 1000px; }
   .header .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
   .header .navbar-toggler {
@@ -70,7 +70,7 @@ nav .offcanvas {
   gap: 20px; }
 
 img.fig_1 {
-  margin-left: 20px; }
+  margin-left: 40px; }
 
 @media (max-width: 1050px) {
   .fig_1 {
@@ -143,13 +143,14 @@ img.fig_1 {
     margin-bottom: 100px; } }
 
 .video {
+  background-color: #F0EEEE;
   padding: 65px; }
   .video_container {
-    width: 1000px;
+    width: 900px;
     flex-wrap: wrap;
     margin: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr; }
+    grid-template-columns: 1fr auto; }
     @media (max-width: 1100px) {
       .video_container {
         width: 800px; } }
@@ -177,13 +178,12 @@ img.fig_1 {
     display: flex;
     flex-direction: column;
     place-items: start;
-    justify-self: center;
+    justify-self: start;
     justify-content: space-between;
-    width: 22.5em;
     padding: 0px 1.25em 0 .625em; }
     .video_horario h2 {
       font-family: "Sora";
-      font-size: 1.875em;
+      font-size: 35px;
       font-weight: 700;
       background-image: linear-gradient(to right, #26D07C, #0077C8);
       background-clip: text;
@@ -193,19 +193,25 @@ img.fig_1 {
       -webkit-text-fill-color: transparent;
       -moz-text-fill-color: transparent; }
     .video_horario div {
+      font-size: 20px;
+      font-weight: 500;
       font-family: "Roboto";
       color: #002a3a; }
     .video_horario .btn-youtube {
       display: flex;
       gap: 0.9375em;
-      justify-self: flex-start;
+      justify-self: flex-end;
       padding: 0.625em 1.25em;
       border-radius: 0.3125em;
       text-decoration: none;
       font-family: "Roboto";
+      font-size: 20px;
       font-weight: 500;
       color: #fff;
       background: linear-gradient(to right, #0077C8, #26D07C); }
+      .video_horario .btn-youtube ion-icon {
+        align-self: center;
+        font-size: 30px; }
 
 @media (max-width: 500px) {
   .video {
@@ -232,38 +238,25 @@ img.fig_1 {
 .app-container,
 .agenda-container,
 .dizimos-container {
-  width: 1000px;
+  width: 900px;
   flex-wrap: wrap;
   margin: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr; }
-
-.app-informacoes {
-  display: flex;
-  flex-direction: column;
-  place-items: start;
-  justify-self: center;
-  justify-content: space-between;
-  width: 22.5em;
-  padding: 0px 1.25em 0 .625em; }
-
-.btn-youtube img {
-  width: 1.5625em;
-  color: #fff; }
+  grid-template-columns: 1fr auto; }
 
 .video-celebracao {
-  box-shadow: 0px 0px 0px 10px #fff;
+  box-shadow: 0px 0px 0px 10px #F0EEEE;
   border-radius: 0.9375em; }
 
 .app {
   background-color: #F0EEEE;
   padding: 4.0625em; }
   .app_container {
-    width: 1000px;
+    width: 900px;
     flex-wrap: wrap;
     margin: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr; }
+    grid-template-columns: 1fr auto; }
     @media (max-width: 1100px) {
       .app_container {
         max-width: 800px; } }
@@ -309,7 +302,7 @@ img.fig_1 {
       padding: 0px 1.25em 0 .625em; }
       .app_container_info h2 {
         font-family: "Sora";
-        font-size: 1.875em;
+        font-size: 35px;
         font-weight: 700;
         background-image: linear-gradient(to right, #87189D, #171C8F);
         background-clip: text;
@@ -362,9 +355,9 @@ img.fig_1 {
       .agenda .agenda-flex {
         font-size: 12px; } }
   .agenda_container {
-    width: 55em;
+    width: 900px;
     display: grid;
-    grid-template-columns: 18.75em 1fr;
+    grid-template-columns: 1fr;
     margin: auto;
     gap: 3.75em; }
     @media (max-width: 1100px) {
@@ -376,19 +369,10 @@ img.fig_1 {
         gap: 0; }
         .agenda_container .agenda_container_imagens {
           display: none; } }
-    .agenda_container_imagens {
-      display: flex;
-      flex-direction: column;
-      gap: 60px;
-      align-items: flex-start;
-      margin-bottom: 60px; }
-      .agenda_container_imagens img {
-        width: 180px;
-        filter: brightness(0);
-        opacity: 15%; }
     .agenda_container h2 {
+      text-align: center;
       font-family: "Sora";
-      font-size: 1.875em;
+      font-size: 35px;
       font-weight: 700;
       background-image: linear-gradient(to right, #0077C8, #26D07C);
       background-clip: text;
@@ -398,27 +382,43 @@ img.fig_1 {
       -webkit-text-fill-color: transparent;
       -moz-text-fill-color: transparent; }
     .agenda_container p {
+      text-align: center;
       font-family: "Roboto";
       color: #666;
-      font-size: 0.9375em;
-      margin-top: 1.25em;
+      font-size: 15px;
+      margin-top: 5px;
       margin-bottom: 3em; }
-  .agenda .agenda-bloco {
+  .agenda .btn-ibcidade:hover {
+    text-decoration: none;
+    color: #000;
+    font-family: "Roboto";
+    font-weight: 500;
+    background: linear-gradient(#F0EEEE, #F0EEEE) padding-box, linear-gradient(45deg, #87189D, #171C8F) border-box;
+    border: 2.5px solid transparent;
+    border-radius: 10px;
+    padding: 3px 8px;
+    display: flex;
+    align-items: center;
+    gap: 5px; }
+  .agenda .agenda_container .agenda-bloco {
     font-family: "Roboto";
     color: #666;
     padding: 0.93754em 0;
     margin-bottom: 1.875em;
     background: linear-gradient(#fff, #fff) padding-box, linear-gradient(45deg, #0077C8, #26D07C) border-box;
     border-bottom: 3.5px solid transparent; }
-    .agenda .agenda-bloco .agenda-flex {
+    .agenda .agenda_container .agenda-bloco .agenda-flex {
+      font-size: 18px;
       margin-top: 1.25em;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr auto;
       row-gap: 0.9375em;
       align-items: center; }
-    .agenda .agenda-bloco .domingo {
+    .agenda .agenda_container .agenda-bloco .domingo {
       padding-bottom: 0.625em;
       border-bottom: 2px solid #F0EEEE; }
+  .agenda .agenda_container .agenda-bloco.sem-borda {
+    background: none; }
 
 /* TAMANHOS VARIADOS DAS SUBMARCAS */
 .agenda-bloco a .icone-instagram {
@@ -455,7 +455,7 @@ img.fig_1 {
     margin-bottom: 30px;
     margin-left: 200px;
     font-family: "Sora";
-    font-size: 1.875em;
+    font-size: 35px;
     font-weight: 700;
     background-image: linear-gradient(to right, #87189D, #171C8F);
     background-clip: text;
@@ -489,7 +489,7 @@ img.fig_1 {
     margin-bottom: 30px;
     margin-left: 200px;
     font-family: "Sora";
-    font-size: 1.875em;
+    font-size: 35px;
     font-weight: 700;
     background-image: linear-gradient(to right, #EF4B81, #ffa400);
     background-clip: text;

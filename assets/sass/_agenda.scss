@@ -1,32 +1,35 @@
 .agenda {
   padding: 65px 65px 0 65px;
 
-  @media(max-width: 500px){
+  @media(max-width: 500px) {
     padding: 40px 40px 0 40px;
   }
 
-  @media(max-width:400px){
+  @media(max-width:400px) {
     padding: 25px 25px 0 25px;
 
-    .agenda_container div h2{
+    .agenda_container div h2 {
       text-align: center;
       font-size: 25px;
     }
-    .agenda_container p{
+
+    .agenda_container p {
       text-align: center;
     }
-    .agenda-bloco h3{
+
+    .agenda-bloco h3 {
       font-size: 16px;
     }
-    .agenda-flex{
+
+    .agenda-flex {
       font-size: 12px;
     }
   }
 
   &_container {
-    width: 55em;
+    width: 900px;
     display: grid;
-    grid-template-columns: 18.75em 1fr;
+    grid-template-columns: 1fr;
     margin: auto;
     gap: 3.75em;
 
@@ -35,54 +38,58 @@
     }
 
     @media (max-width: 800px) {
-        grid-template-columns: 1fr;
-        gap: 0;
+      grid-template-columns: 1fr;
+      gap: 0;
 
-        .agenda_container_imagens{
-          display: none;
-        }
-    }
-
-    &_imagens {
-      display: flex;
-      flex-direction: column;
-      gap: 60px;
-      align-items: flex-start;
-      margin-bottom: 60px;
-
-      img {
-        width: 180px;
-        filter: brightness(0);
-        opacity: 15%;
+      .agenda_container_imagens {
+        display: none;
       }
     }
 
     h2 {
+      text-align: center;
       @include titulo($cor8, $cor9)
     }
 
     p {
+      text-align: center;
       font-family: "Roboto";
       color: #666;
-      font-size: 0.9375em;
-      margin-top: 1.25em;
+      font-size: 15px;
+      margin-top: 5px;
       margin-bottom: 3em;
     }
   }
 
-  .agenda-bloco {
+  .btn-ibcidade:hover {
+    text-decoration: none;
+    color: #000;
+    font-family: "Roboto";
+    font-weight: 500;
+
+    background: linear-gradient($cor10, $cor10) padding-box, linear-gradient(45deg, $cor4, $cor5) border-box;
+    border: 2.5px solid transparent;
+    border-radius: 10px;
+    padding: 3px 8px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+  }
+
+  .agenda_container .agenda-bloco {
     font-family: "Roboto";
     color: #666;
     padding: 0.93754em 0;
     margin-bottom: 1.875em;
-
     background: linear-gradient(#fff, #fff) padding-box, linear-gradient(45deg, $cor8, $cor9) border-box;
     border-bottom: 3.5px solid transparent;
 
     .agenda-flex {
+      font-size: 18px;
       margin-top: 1.25em;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr auto;
       row-gap: 0.9375em;
       align-items: center;
     }
@@ -93,7 +100,9 @@
     }
   }
 
-
+  .agenda_container .agenda-bloco.sem-borda {
+    background: none;
+  }
 
 }
 

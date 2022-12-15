@@ -1,4 +1,5 @@
 .video {
+  background-color: $cor10;
   padding: 65px;
    
   &_container {
@@ -46,33 +47,41 @@
     display: flex;
     flex-direction: column;
     place-items: start;
-    justify-self: center;
+    justify-self: start;
     justify-content: space-between;
-    width: 22.5em;
+    // width: 22.5em;
     padding: 0px 1.25em 0 .625em;
-
-
 
     h2 {
       @include titulo($cor9, $cor8)
+
     }
 
     div {
+      font-size: 20px;
+      font-weight: 500;
       font-family: "Roboto";
       color: #002a3a;
+      
     }
 
     .btn-youtube {
       display: flex;
       gap: 0.9375em;
-      justify-self: flex-start;
+      justify-self: flex-end;
       padding: 0.625em 1.25em;
       border-radius: 0.3125em;
       text-decoration: none;
       font-family: "Roboto";
+      font-size: 20px;
       font-weight: 500;
       color: #fff;
       background: linear-gradient(to right, $cor8, $cor9);
+
+      ion-icon{
+        align-self: center;
+        font-size: 30px;
+      }
     }
   }
 }
@@ -118,25 +127,19 @@
   @include container;
 }
 
-.app-informacoes {
-  display: flex;
-  flex-direction: column;
-  place-items: start;
-  justify-self: center;
-  justify-content: space-between;
-  width: 22.5em;
-  padding: 0px 1.25em 0 .625em;
-}
+// .app-informacoes {
+//   display: flex;
+//   flex-direction: column;
+//   place-items: start;
+//   justify-self: center;
+//   justify-content: space-between;
+//   width: 22.5em;
+//   padding: 0px 1.25em 0 .625em;
+// }
 
 
-
-
-.btn-youtube img {
-  width: 1.5625em;
-  color: #fff;
-}
 
 .video-celebracao {
-  box-shadow: 0px 0px 0px 10px #fff;
+  box-shadow: 0px 0px 0px 10px $cor10;
   border-radius: 0.9375em;
 }

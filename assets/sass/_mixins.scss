@@ -1,14 +1,14 @@
 @mixin container{
-  width: 1000px;
+  width: 900px;
   flex-wrap: wrap;
   margin: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr auto;
 }
 
 @mixin titulo($cor-1, $cor-2) {
   font-family: "Sora";
-  font-size: 1.875em;
+  font-size: 35px;
   font-weight: 700;
   background-image: linear-gradient(to right, $cor-1, $cor-2);
   background-clip: text;
