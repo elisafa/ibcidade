@@ -61,16 +61,16 @@
     }
   }
 
-  .btn-ibcidade:hover {
+  .btn-ibcidade{
+    font-size: 16px;
     text-decoration: none;
     color: #000;
     font-family: "Roboto";
-    font-weight: 500;
 
-    background: linear-gradient($cor10, $cor10) padding-box, linear-gradient(45deg, $cor4, $cor5) border-box;
+    background: linear-gradient(#fff, #fff) padding-box, linear-gradient(45deg, $cor8, $cor9) border-box;
     border: 2.5px solid transparent;
     border-radius: 10px;
-    padding: 3px 8px;
+    padding: 5px 15px;
     display: flex;
     align-items: center;
     gap: 5px;
