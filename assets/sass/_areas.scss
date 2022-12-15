@@ -1,6 +1,7 @@
 .areas {
   background-color:$cor10;
   max-width: 100%;
+  padding-top: 0;
   padding: 60px;
 
   .areas_container {
@@ -23,7 +24,7 @@
     }
 
       img {
-      width: 150px;
+      width: 180px;
       padding: 10px;
 
       &:hover {
